@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "report": "report/金融数学风险研究_论文式报告.docx",
+  "sha256": "db7c8980a6105bcbc9cb0cc9295eaa080fa97a25692b5f0ac7933862f6486523",
+  "pages": 16,
+  "figures": 8,
+  "tables": 14,
+  "render": "Canonical render_docx.py failed because bundled LibreOffice was unavailable. Read-only Microsoft Word COM PDF export succeeded without changing DOCX SHA-256; pages rasterized with PDFium.",
+  "visual_review": "All sixteen pages reviewed individually at full size: pages 1–5 core/math reviewer, pages 6–11 historical/statistics reviewer, pages 12–16 root reviewer. No clipping, missing glyphs, overlaps or broken tables. Title border removed; formulas are native OMML.",
+  "content_checks": [
+    "Executed numerical results and intervals match saved CSV/JSON",
+    "No claim of market optimality, publishable novelty or independently completed student authorship",
+    "Ten-program union preserves twelve direct, two partial and four external evidence dimensions"
+  ],
+  "executed_at": "2026-10-05T16:13:57.946512+00:00"
+}

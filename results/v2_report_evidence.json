@@ -1,0 +1,15 @@
+{
+  "report": "金融数学风险研究_V2_论文式报告与发表评估.docx",
+  "input_sha256": {
+    "results/v2_historical_summary.json": "d13dcc84d23b68e2ff1b9a859557b44f730869908978b427b669a0970524cc6a",
+    "results/v2_selection_summary.json": "89aa3ad1360a3895a9313e89d58a886a41aa6c1a95d4ed869448f3c1644f3145",
+    "results/v2_convex_summary.json": "d6af514bdb0c4bf21eb3aae7dad83c1f7ff59ad20b2a69af34211983b2f92362",
+    "results/validation.json": "8ebf33c7d056425ead5dd55e8df85a3f5aca538c7f8ab3c627c25cb2decd20b3",
+    "docs/v2_literature.json": "7b1d769375c04f0e00b5d2f4e3f59fd40fe42adb14c6eeeef6f6b4f28e2c0ad5",
+    "docs/publication_routes.json": "3df00b23ab1f89ca594418ae920ea584da5e7679ed011f36e387cd859790c2f1"
+  },
+  "paragraphs": 182,
+  "tables": 10,
+  "figures": 7,
+  "authoring_note": "Numbers loaded from executed evidence; conclusions are tied to the frozen V2 experiment and require review if protocol changes."
+}

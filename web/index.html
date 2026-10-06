@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>FinMath Risk Lab · 金融数学研究工作台</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='7' fill='%23142d3e'/%3E%3Ctext x='16' y='37' font-size='40' font-family='Georgia' font-style='italic' fill='%237bc3b5'%3Ef%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="/styles.css"><script defer src="/app.js"></script></head>
+<body>
+<a class="skip" href="#main">跳至主要内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#overview" aria-label="FinMath Risk Lab 首页"><span class="brand-mark">f<span>∿</span></span><span>FinMath<span class="brand-sub">RISK LAB / 研究工作台</span></span></a>
+  <p class="rail-caption">研究路径</p>
+  <nav aria-label="研究区导航">
+    <a href="#overview" data-page="overview" aria-current="page"><span>01</span> 研究概览</a>
+    <a href="#pricing" data-page="pricing"><span>02</span> 定价与敏感度</a>
+    <a href="#hedging" data-page="hedging"><span>03</span> 对冲实验</a>
+    <a href="#historical" data-page="historical"><span>04</span> 历史数据证据</a>
+    <a href="#competencies" data-page="competencies"><span>05</span> 能力并集</a>
+    <a href="#research-v2" data-page="research-v2"><span>06</span> 研究深化与投稿</a>
+  </nav>
+  <div class="rail-bottom"><span class="status-dot" id="connection-dot"></span><span id="connection">正在连接本地内核</span><p>课程延伸研究 · PROJECT 10<br>有限数据 / 模型不确定性</p></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span id="breadcrumb">RESEARCH / OVERVIEW</span><span class="top-note">本地计算 · 可追溯实验</span></header>
+  <main id="main" tabindex="-1">
+    <section id="overview" class="page active" aria-labelledby="overview-title">
+      <div class="page-heading"><div><p class="eyebrow">FINITE DATA. EXPLICIT ASSUMPTIONS.</p><h1 id="overview-title">理解模型，<br>才能理解风险<span class="teal">。</span></h1><p class="lead">从有限数据中的波动率估计，走向有成本约束的对冲决策。<br class="desktop">让每一个结论，都能回到可检查的计算与证据。</p></div><span class="edition">课程延伸<br><strong>研究深化 2.0</strong></span></div>
+      <div class="research-hero"><div><span class="inverse-label">核心研究问题</span><h2>预测更准确，<br>决策就一定更好吗？</h2><p>以期权对冲为研究载体，区分预测误差、数值误差和交易成本，检查方法在新的数据中是否仍然可靠。</p><a class="button light" href="#hedging">进入对冲实验 <span aria-hidden="true">↗</span></a></div><div class="hero-graphic"><span class="chart-kicker">实时模型截面 / 欧式期权</span><div id="hero-chart" class="chart-placeholder">正在读取计算内核…</div><p id="hero-caption">图形由当前定价参数计算生成</p></div></div>
+      <div class="section-title"><h2>一条完整的证据链</h2><span>从假设到解释</span></div>
+      <ol class="pipeline"><li><span>01 / DATA</span><strong>理解数据</strong><p>来源、时间顺序与信息可用性</p></li><li><span>02 / MODEL</span><strong>估计与建模</strong><p>数学假设、基线与不确定性</p></li><li><span>03 / DECISION</span><strong>比较决策</strong><p>相同路径、成本与尾部风险</p></li><li><span>04 / EVIDENCE</span><strong>验证与解释</strong><p>独立评价、失败案例与复现</p></li></ol>
+      <div class="section-title"><h2>当前研究证据</h2><button id="refresh-results" class="text-button">刷新结果 ↻</button></div>
+      <div id="evidence-status" class="evidence-list" aria-live="polite"><p class="muted">正在读取本地实验文件…</p></div>
+      <div class="note"><strong>研究边界</strong><p>这是金融数学课程的计算研究延伸。模拟损益不是实盘收益；历史参考价格上的假想对冲，也不构成真实期权市场验证。项目以可复现实验展示能力，不代表满足全部入学要求。</p></div>
+    </section>
+
+    <section id="pricing" class="page" hidden aria-labelledby="pricing-title">
+      <div class="page-heading compact"><div><p class="eyebrow">02 / PRICING & SENSITIVITY</p><h1 id="pricing-title">定价与敏感度</h1><p class="lead">在一致假设下交叉核验三种方法，并查看价格如何随标的变化。</p></div><span class="pill">欧式期权</span></div>
+      <div class="lab-layout"><form id="price-form" class="control-panel">
+        <div class="form-title"><h2>模型参数</h2><button type="reset" class="text-button">重置</button></div>
+        <div class="field-pair"><label>标的价格 S<input name="spot" type="number" min="0.001" max="1000000" step="any" value="100" required></label><label>执行价格 K<input name="strike" type="number" min="0.001" max="1000000" step="any" value="100" required></label></div>
+        <div class="field-pair"><label>到期时间 T <small>年</small><input name="maturity" type="number" min="0.0001" max="10" step="any" value="0.25" required></label><label>年化波动率 σ <small>0.20 = 20%</small><input name="vol" type="number" min="0.001" max="3" step="any" value="0.20" required></label></div>
+        <div class="field-pair"><label>连续复利利率 r<input name="rate" type="number" min="-0.2" max="0.5" step="any" value="0.03" required></label><label>股息率 q<input name="dividend" type="number" min="0" max="0.5" step="any" value="0" required></label></div>
+        <label>合约类型<select name="kind"><option value="call">看涨期权 Call</option><option value="put">看跌期权 Put</option></select></label>
+        <details><summary>数值设置与隐含波动率</summary><div class="field-pair"><label>二叉树步数<input name="steps" type="number" min="2" max="1024" value="256" required></label><label>模拟路径数<input name="n_paths" type="number" min="100" max="100000" value="20000" required></label></div><label>随机种子<input name="seed" type="number" min="0" max="4294967295" value="42" required></label><label>参考期权价格 <small>可选</small><input name="market_price" type="number" min="0" max="1000000" step="any" placeholder="输入以反求隐含波动率"></label></details>
+        <button class="button primary" type="submit">运行定价计算 <span aria-hidden="true">→</span></button><div id="price-message" class="form-message" role="status" aria-live="polite"></div>
+      </form><div class="lab-output"><div id="price-results" class="empty-state">输入参数并运行计算。输出来自 Python 数值内核。</div><div class="plot-panel"><div class="section-title"><h2>价格曲线</h2><span>其余参数保持不变</span></div><div id="price-chart" class="chart-placeholder">等待计算</div></div><div id="greeks"></div></div></div>
+      <div class="note"><strong>如何阅读结果</strong><p>Black–Scholes 是当前假设下的解析基准；二叉树误差来自有限步数；蒙特卡洛区间反映抽样误差，不能解释为市场价格区间。数值实现与真实市场是否适用，是两个需要分别检查的问题。</p></div>
+    </section>
+
+    <section id="hedging" class="page" hidden aria-labelledby="hedging-title">
+      <div class="page-heading compact"><div><p class="eyebrow">03 / COST-AWARE HEDGING</p><h1 id="hedging-title">把模型放进实验</h1><p class="lead">在相同路径和初始权利金下，对照所选策略与每步调仓策略。</p></div><span class="pill">配对比较</span></div>
+      <div class="lab-layout"><form id="hedge-form" class="control-panel">
+        <div class="form-title"><h2>实验配置</h2><button type="reset" class="text-button">重置</button></div>
+        <label>数据生成机制<select name="model" id="path-model"><option value="gbm">几何布朗运动 GBM</option><option value="regime">中途波动率变化</option><option value="jump">跳跃扩散</option></select></label>
+        <div class="field-pair"><label>真实波动率<input name="vol" type="number" min="0.001" max="1.5" step="any" value="0.20" required></label><label>对冲使用的波动率<input name="hedge_vol" type="number" min="0.001" max="1.5" step="any" value="0.20" required></label></div>
+        <div id="regime-fields" hidden><label>后半程波动率<input name="vol2" type="number" min="0.001" max="1.5" step="any" value="0.40"></label></div>
+        <div id="jump-fields" hidden><div class="field-pair"><label>年均跳跃次数<input name="jump_intensity" type="number" min="0" max="10" step="any" value="1"></label><label>跳跃对数均值<input name="jump_mean" type="number" min="-0.5" max="0.5" step="any" value="-0.08"></label></div><label>跳跃对数标准差<input name="jump_std" type="number" min="0" max="0.5" step="any" value="0.12"></label></div>
+        <div class="field-pair"><label>交易费率 <small>基点 / 单边</small><input name="cost_bps" type="number" min="0" max="100" step="any" value="5" required></label><label>随机种子<input name="seed" type="number" min="0" max="4294967295" value="42" required></label></div>
+        <label>所选调仓策略<select name="policy" id="hedge-policy"><option value="fixed">固定间隔调仓</option><option value="threshold">Delta 偏差阈值调仓</option></select></label>
+        <label id="every-field">每隔多少步调仓<input name="every" type="number" min="1" max="252" value="5" required></label><label id="threshold-field" hidden>Delta 偏差阈值<input name="threshold" type="number" min="0.001" max="1" step="any" value="0.05"></label>
+        <details><summary>路径与合约设置</summary><div class="field-pair"><label>路径数<input name="n_paths" type="number" min="10" max="3000" value="500" required></label><label>每条路径步数<input name="steps" type="number" min="2" max="252" value="63" required></label></div><div class="field-pair"><label>初始价格<input name="spot" type="number" min="0.01" max="100000" step="any" value="100" required></label><label>执行价格<input name="strike" type="number" min="0.01" max="100000" step="any" value="100" required></label></div><div class="field-pair"><label>期限 <small>年</small><input name="horizon" type="number" min="0.001" max="3" step="any" value="0.25" required></label><label>利率<input name="rate" type="number" min="-0.1" max="0.3" step="any" value="0.03" required></label></div><label>物理测度漂移 μ<input name="mu" type="number" min="-0.5" max="0.5" step="any" value="0.03" required></label><label>合约类型<select name="kind"><option value="call">看涨期权 Call</option><option value="put">看跌期权 Put</option></select></label><p class="field-hint">路径数 ×（步数 + 1）≤ 400,000。漂移 μ 用于路径生成，利率 r 用于定价与现金计息。</p></details>
+        <button class="button primary" type="submit">运行配对实验 <span aria-hidden="true">→</span></button><div id="hedge-message" class="form-message" role="status" aria-live="polite"></div>
+      </form><div class="lab-output"><div id="hedge-results" class="empty-state">改变交易费用或波动率假设，检查策略表现。尚未运行实验。</div><div class="plot-panel"><div class="section-title"><h2>生成的价格路径</h2><span>展示前 8 条 / 非筛选</span></div><div id="path-chart" class="chart-placeholder">等待实验</div></div><div class="plot-panel"><div class="section-title"><h2>期末损益分布</h2><span>所选策略 · 已计交易成本</span></div><div id="histogram" class="chart-placeholder">等待实验</div></div></div></div>
+      <div id="ledger-section" hidden><div class="section-title"><h2>第 1 条路径的逐步账本</h2><button id="download-simulation" class="text-button">下载本次实验 JSON ↓</button></div><p class="muted">包含初始建仓、现金计息、持仓调整与到期结算。表格可水平滚动。</p><div id="ledger" class="table-wrap" tabindex="0" aria-label="路径账本，可左右滚动"></div></div>
+      <div class="note"><strong>统一核算口径</strong><p>卖出一份期权并持有 Delta 对冲；损失 = −损益。股息率固定为 0，借贷使用相同利率，入场、调仓与清仓均计费，成本累计到期末。均值差区间是独立模拟路径上的点态配对区间，不是所有比较的同时置信区间。</p></div>
+    </section>
+
+    <section id="historical" class="page" hidden aria-labelledby="historical-title"><div class="page-heading compact"><div><p class="eyebrow">04 / EMPIRICAL EVIDENCE</p><h1 id="historical-title">让结论接受数据检验</h1><p class="lead">历史参考汇率、按时间划分的数据与锁定测试；如实呈现证据及其限制。</p></div></div><div class="split-timeline"><div><span>训练 / TRAIN</span><strong>2005–2016</strong><p>构建特征与拟合模型</p></div><div><span>验证 / VALIDATE</span><strong>2017–2020</strong><p>选择方法与超参数</p></div><div><span>锁定测试 / TEST</span><strong>2021–2025</strong><p>最终评价，不回调参数</p></div></div><div id="historical-content" aria-live="polite" class="empty-state">正在读取真实历史实验结果…</div><details class="raw-details"><summary>查看原始实验记录 JSON</summary><pre id="historical-json">尚未加载</pre></details><div class="note"><strong>数据与解释范围</strong><p>ECB 每日欧元参考汇率是参考观察值，不是可成交报价。两种汇率并非独立重复实验。没有真实期权报价时，历史路径上的期权对冲只是假想实验；预测误差指标与最终对冲表现也需要分别评价。</p></div></section>
+
+    <section id="competencies" class="page" hidden aria-labelledby="competencies-title"><div class="page-heading compact"><div><p class="eyebrow">05 / CAPABILITY UNION</p><h1 id="competencies-title">十个方向，一份真实证据</h1><p class="lead">取公开能力侧重的并集。每项能力对应实际工作；尚未覆盖的要求保持可见。</p></div><span class="pill">并集 ∪</span></div><div class="union-intro"><h2>从能力，到可核验的成果</h2><p>数学、统计、计算、机器学习、决策、沟通与领域意识可以在同一个研究问题中汇合。下列映射说明项目如何提供辅助证据，不表示替代正式先修课或满足全部录取要求。</p></div><div id="competency-content" aria-live="polite" class="empty-state">正在读取能力与官方来源映射…</div><details class="raw-details"><summary>查看完整能力映射 JSON</summary><pre id="competency-json">尚未加载</pre></details></section>
+    <section id="research-v2" class="page" hidden aria-labelledby="research-v2-title">
+      <div class="page-heading compact"><div><p class="eyebrow">06 / RESEARCH DEPTH & PUBLICATION</p><h1 id="research-v2-title">让研究问题，<br>走向更严格的检验<span class="teal">。</span></h1><p class="lead">期限匹配、选择误差与直接风险优化。每项结论对应实际实验，<br class="desktop">每条投稿路线标明成果类型、时间与尚未满足的条件。</p></div><span class="edition">方法与证据<br><strong>研究深化 2.0</strong></span></div>
+      <div class="v2-question"><span class="inverse-label">本轮研究问题</span><h2>更好的预测，何时才能带来更好的对冲？</h2><p>把预测目标、策略选择和交易成本放进同一评价流程，检查结论在不同样本与模型变化下是否成立。</p><div class="v2-actions"><button id="refresh-v2" class="button light">读取最新结果 ↻</button><button id="download-v2" class="text-button">导出证据 JSON ↓</button></div></div>
+      <div id="v2-message" class="form-message" role="status" aria-live="polite"></div>
+      <div id="v2-status" class="v2-status-grid" aria-live="polite"><p class="muted">正在读取研究深化文件…</p></div>
+      <div class="section-title"><h2>冻结协议与研究流程</h2><span>先规定比较，再运行实验</span></div><div id="v2-protocol" class="empty-state">正在核对本轮协议…</div>
+      <div class="section-title"><h2>预定主比较</h2><span>保留负结果与不确定性</span></div><div id="v2-primary" aria-live="polite" class="empty-state">实验结果尚未读取。</div>
+      <div class="section-title"><h2>历史范围与期限匹配</h2><span>回溯评价与留出期分列</span></div><div id="v2-historical" class="empty-state">等待历史研究摘要。</div>
+      <div class="section-title"><h2>直接风险优化与数值审计</h2><span>有限样本凸优化 / 非全局市场最优</span></div><div id="v2-convex" class="empty-state">等待凸优化研究摘要。</div>
+      <div class="section-title"><h2>从研究成果到投稿路径</h2><span id="v2-route-date">官方资料核验</span></div><p class="muted">正式论文、workshop 与会议展示是不同成果类型。以下是匹配建议，不是录用预测；本工作台不执行投稿。</p><div class="history-toolbar"><label>筛选投稿路径<select id="v2-route-filter"><option value="all">全部核验渠道</option><option value="open">当前开放的路径</option><option value="later">已截止或尚未满足条件</option></select></label></div><div id="v2-routes" aria-live="polite" class="empty-state">等待投稿路线核验资料。</div>
+      <details class="raw-details"><summary>查看协议、结果与来源的原始 JSON</summary><pre id="v2-json">尚未加载</pre></details>
+      <div class="note"><strong>解释边界</strong><p>金融预测得到的物理测度波动估计用于对冲控制，并不等于市场隐含波动率。参考汇率上的假设期权实验不代表真实成交收益；有限候选中的最优选择不代表所有策略的最优。论文还需要真实的人类理解、复核与贡献，不能由软件完成度替代。</p></div>
+    </section>
+  </main>
+  <footer><span>FINMATH RISK LAB</span><span>明确假设 · 保留不确定性 · 可重复验证</span></footer>
+</div><div id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>

@@ -1,0 +1,134 @@
+{
+  "main_protocol_sha256": "e42f28a45bd4bd5619f6380a46eb052414d1581607781757b8cebc8dfaa9f8ab",
+  "implementation": {
+    "version": "2.0.0",
+    "seed_formula": "SeedSequence([20261006,scenario_index,replicate,stream]); stream 1=calibration,2=validation,3=test,4=reference; distinct full-procedure replicates",
+    "validation_nesting": "Within a replicate, first 16/64/256 rows of the same 256-path validation pool; not independent sizes",
+    "calibration": "Independent 60-return path under GBM for matched_gbm, matched Heston otherwise; sample standard deviation ddof=1 annualized sqrt(252)",
+    "forecast": "The 60-return volatility estimate multiplied by 0.75/1/1.25, frozen for each hedge episode; latent variance is never supplied to the candidate",
+    "qlike": "log(hedge_vol^2/252)+mean(all validation one-observation squared log returns)/(hedge_vol^2/252); noisy conditional-second-moment proxy, not option implied volatility",
+    "scenario_mapping": {
+      "matched_gbm": {
+        "calibration": "gbm",
+        "validation": "gbm",
+        "test": "gbm",
+        "reference": "gbm"
+      },
+      "heston": {
+        "calibration": "heston",
+        "validation": "heston",
+        "test": "heston",
+        "reference": "heston"
+      },
+      "heston_shift": {
+        "calibration": "heston",
+        "validation": "heston",
+        "test": "heston_shift",
+        "reference": "heston_shift"
+      },
+      "jump_shift": {
+        "calibration": "heston",
+        "validation": "heston",
+        "test": "jump_shift",
+        "reference": "jump_shift"
+      }
+    },
+    "fee_calculation": "Risk-independent policies have identical positions at every fee. Run each once at zero fee; net_pnl=gross_pnl-turnover*fee_bps/10000 (r=0). Direct-fee equivalence independently tested.",
+    "reference": "Same 12 calibrated-volatility/policy pairs evaluated on independent 16384-path reference; minimum reference MSE among reference mean-cost-feasible pairs. All selectors compared to that pair on the SAME reference paths. If selected pair violates reference budget, its signed difference can be negative; this is not constrained feasible regret.",
+    "fallback": "If no eligible pair meets validation cost budget, choose minimum cost, then MSE, then candidate name; retain infeasibility.",
+    "statistical_unit": "Independent full-procedure replicate (24), not individual test path or repeated candidate row",
+    "primary": "heston, validation64, fee5: joint_mse minus forecast_first test MSE; pointwise two-sided Student-t interval across full-procedure replicates",
+    "discretization": {
+      "substeps": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "paths": 32768,
+      "seed_base": 271800,
+      "comparisons": "Independent fine-grid ensembles, not coupled Brownian refinement. Descriptive weak-moment and risk sensitivity, not proof of exactness or convergence order."
+    }
+  },
+  "effective_simulation": {
+    "steps": 21,
+    "horizon": 0.08333333333333333,
+    "spot": 100.0,
+    "strike": 100.0,
+    "rate": 0.0,
+    "physical_drift": 0.0,
+    "premium_volatility": 0.2,
+    "replicates": 3,
+    "validation_paths": [
+      16,
+      64,
+      256
+    ],
+    "test_paths_per_replicate": 128,
+    "independent_reference_paths": 512,
+    "cost_bps": [
+      5.0,
+      20.0
+    ],
+    "calibration_returns_per_replicate": 60,
+    "forecast_multipliers": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "policies": [
+      "daily",
+      "every5",
+      "band05",
+      "band10"
+    ],
+    "selectors": [
+      "forecast_first",
+      "joint_mse",
+      "joint_es90"
+    ],
+    "mean_cost_budgets": {
+      "5.0": 0.18,
+      "20.0": 0.72
+    },
+    "scenarios": [
+      "matched_gbm",
+      "heston",
+      "heston_shift",
+      "jump_shift"
+    ],
+    "heston": {
+      "v0": 0.04,
+      "theta": 0.04,
+      "kappa": 2.0,
+      "xi": 0.3,
+      "rho": -0.7,
+      "substeps": 4
+    },
+    "heston_shift": {
+      "v0": 0.09,
+      "theta": 0.09,
+      "kappa": 1.0,
+      "xi": 0.45,
+      "rho": -0.7,
+      "substeps": 4
+    },
+    "jump_shift": {
+      "jump_intensity": 3.0,
+      "jump_mean": -0.06,
+      "jump_std": 0.1
+    },
+    "primary": "Heston matched,64 validation paths,5bps: joint_mse minus forecast_first test MSE, independent full-procedure replicates as inference units",
+    "reference_oracle": "Per replicate chosen-model class reference optimum evaluated on a separate large Monte Carlo sample; noisy, retrospective finite-class information benchmark, never a deployable selector",
+    "output_requirements": [
+      "selection frequencies",
+      "paired replicate intervals",
+      "test budget exceedance frequencies",
+      "net MSE variance and bias squared decomposition",
+      "estimated finite-class regret",
+      "Heston time-step sensitivity"
+    ]
+  },
+  "execution_protocol_sha256": "30d8810fdaa4b0b6f86b5c6d8bc4230c568172891d28e00e4b79af8d3e99e0c3"
+}

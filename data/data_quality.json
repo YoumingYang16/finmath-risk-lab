@@ -1,0 +1,15 @@
+{
+  "download_rows": 7107,
+  "download_start": "1999-01-04",
+  "download_end": "2026-10-05",
+  "processed_rows": 6913,
+  "processed_start": "1999-01-04",
+  "processed_end": "2025-12-31",
+  "duplicate_dates": 0,
+  "missing_selected_quotes": 0,
+  "nonpositive_selected_quotes": 0,
+  "max_calendar_gap_days": 5,
+  "gaps_over_three_days": 57,
+  "calendar_gap_treatment": "No interpolation or forward fill. Returns use successive published observations; a 252-observation year is a convention, not equal calendar spacing.",
+  "processing": "Select USD and JPY currency units per EUR; sort dates; retain 1999-01-04 through 2025-12-31 inclusive. No quote correction, return winsorisation, filling or observation deletion."
+}

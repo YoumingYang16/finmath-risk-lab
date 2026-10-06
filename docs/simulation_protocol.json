@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "spot": 100.0,
+  "strike": 100.0,
+  "horizon": 0.5,
+  "rate": 0.03,
+  "physical_drift": 0.03,
+  "base_vol": 0.2,
+  "steps": 126,
+  "validation_seed_base": 13000,
+  "test_seed_base": 73000,
+  "calibration_seed_offset": 200000,
+  "n_validation": 1024,
+  "n_test": 8192,
+  "fees_bps": [
+    0.0,
+    5.0,
+    20.0
+  ],
+  "policies": {
+    "daily": {
+      "kind": "fixed",
+      "every": 1
+    },
+    "every5": {
+      "kind": "fixed",
+      "every": 5
+    },
+    "every21": {
+      "kind": "fixed",
+      "every": 21
+    },
+    "band02": {
+      "kind": "threshold",
+      "threshold": 0.02
+    },
+    "band05": {
+      "kind": "threshold",
+      "threshold": 0.05
+    },
+    "band10": {
+      "kind": "threshold",
+      "threshold": 0.1
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1",
+      "name": "Matched GBM",
+      "model": "gbm",
+      "hedge": 0.2
+    },
+    {
+      "id": "S2",
+      "name": "Underestimated volatility",
+      "model": "gbm",
+      "hedge": 0.15
+    },
+    {
+      "id": "S3",
+      "name": "Overestimated volatility",
+      "model": "gbm",
+      "hedge": 0.3
+    },
+    {
+      "id": "S4",
+      "name": "Finite calibration 20 observations",
+      "model": "gbm",
+      "calibration": 20
+    },
+    {
+      "id": "S5",
+      "name": "Finite calibration 120 observations",
+      "model": "gbm",
+      "calibration": 120
+    },
+    {
+      "id": "S6",
+      "name": "Volatility regime change",
+      "model": "regime",
+      "hedge": 0.2,
+      "kwargs": {
+        "vol2": 0.4,
+        "switch_fraction": 0.5
+      }
+    },
+    {
+      "id": "S7",
+      "name": "Jump stress",
+      "model": "jump",
+      "hedge": 0.2,
+      "kwargs": {
+        "jump_intensity": 1.0,
+        "jump_mean": -0.1,
+        "jump_std": 0.15
+      }
+    }
+  ],
+  "selection": "Minimum validation RMSE among policies with validation mean terminalized cost <= 0.50 per initial spot 100",
+  "mean_cost_budget": 0.5,
+  "no_feasible_rule": "Choose minimum validation cost, label fallback and retain budget violation",
+  "tie_break": "RMSE, mean_cost, then policy name lexicographically",
+  "primary_contrast": "S1 at 5 bps: selected policy versus every5 on paired squared terminal losses",
+  "primary_interval": "Pointwise two-sided 95% t interval over independent paired test paths",
+  "other_contrasts": "Exploratory pointwise intervals; no familywise claim",
+  "premium": "Identical BS(base_vol=0.2) premium for all scenarios and policies; not repriced with hidden path parameters",
+  "claims": "Discrete hypothetical replication under stated conventions; no executable trading or causal market evidence"
+}

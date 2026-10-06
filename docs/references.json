@@ -1,0 +1,135 @@
+[
+  {
+    "id": "R1",
+    "citation": "Black F and Scholes M (1973). The Pricing of Options and Corporate Liabilities. Journal of Political Economy 81(3), 637–654.",
+    "url": "https://doi.org/10.1086/260062",
+    "use": "Analytic pricing baseline under stated assumptions, not executable FX valuation.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R2",
+    "citation": "Cox JC, Ross SA and Rubinstein M (1979). Option pricing A simplified approach. Journal of Financial Economics 7, 229–263.",
+    "url": "https://doi.org/10.1016/0304-405X(79)90015-1",
+    "use": "Recombining tree and backward induction.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R3",
+    "citation": "Leland HE (1985). Option Pricing and Replication with Transactions Costs. Journal of Finance 40, 1283–1301.",
+    "url": "https://doi.org/10.1111/j.1540-6261.1985.tb02383.x",
+    "use": "Literature motivation for discrete hedging with costs; this project does not implement or claim Leland asymptotic theorem.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R4",
+    "citation": "Patton AJ (2011). Volatility forecast comparison using imperfect volatility proxies. Journal of Econometrics 160(1), 246–256.",
+    "url": "https://scholars.duke.edu/publication/792433",
+    "use": "Variance forecast loss and noisy proxy caveats; squared reference returns are not directly observed latent variance.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R5",
+    "citation": "Künsch HR (1989). The Jackknife and the Bootstrap for General Stationary Observations. Annals of Statistics 17(3), 1217–1241.",
+    "url": "https://doi.org/10.1214/aos/1176347265",
+    "use": "Moving-block bootstrap motivation; stationarity and dependence assumptions remain limitations.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R6",
+    "citation": "scikit-learn documentation. Ridge and temporal evaluation.",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html",
+    "use": "Regularized linear learner, preprocessing learned using training data only.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "R7",
+    "citation": "scikit-learn documentation. TimeSeriesSplit.",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+    "use": "Motivation for temporal rather than random evaluation; implementation uses explicit date cutoffs.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "D1",
+    "citation": "European Central Bank. Euro foreign exchange reference rates.",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "use": "Reference observations for information, not intended for market transaction purposes.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "D2",
+    "citation": "European Central Bank. Disclaimer and copyright.",
+    "url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+    "use": "Source acknowledgement and statistical reuse terms; preserve transformation notices.",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P1",
+    "citation": "香港中文大学 DSBS",
+    "url": "https://dsbs.cuhk.edu.hk/programme-details/",
+    "use": "课程含 STAT5101/5106、STAT6104、RMSC6007；培养内容不是全部入学硬门槛。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P2",
+    "citation": "CMU MISM BIDA",
+    "url": "https://www.heinz.cmu.edu/programs/information-systems-management-master/bida",
+    "use": "数学、统计、编程的正式先修及学分成绩需独立核验；项目不能替代。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P3",
+    "citation": "香港大学 CS Financial Computing",
+    "url": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-financial-computing/",
+    "use": "FITE7405/7406为具体课程连接；课程先修不等于整个项目统一招生要求。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P4",
+    "citation": "UC Berkeley Master of Analytics",
+    "url": "https://graduate.catalog.berkeley.edu/programs/162G4ANLTG",
+    "use": "本科概率或统计、线代和编程准备需成绩等证明；额外写作样本不审阅。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P5",
+    "citation": "Penn MSE Systems Engineering",
+    "url": "https://www.ese.upenn.edu/academics/masters/systems-engineering-program/mse-in-se-degree-requirements/",
+    "use": "课程分数据科学、系统建模、系统设计与优化；应用领域有金融。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P6",
+    "citation": "Penn MSE Data Science and Artificial Intelligence",
+    "url": "https://dsai.engineering.upenn.edu/curriculum/",
+    "use": "外部申请要求相当于CS辅修的课程与数学统计能力；未将4+1校内GPA要求套用外部申请。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P7",
+    "citation": "NTU MSc Data Science",
+    "url": "https://www.ntu.edu.sg/spms/admissions/grad/detail/master-of-science-in-data-science-%28msds%29",
+    "use": "官方背景为相关计算学科及扎实数学训练；全数据流程与Capstone是培养重点。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P8",
+    "citation": "Imperial Applied Computational Science and Engineering",
+    "url": "https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-computational-science/",
+    "use": "数值计算和项目方法可迁移；本研究不构成大型集群或自然科学领域经验。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P9",
+    "citation": "Harvard SM Health Data Science",
+    "url": "https://hsph.harvard.edu/program/sm-health-data-science/",
+    "use": "当前SM-80；多元积分、线代和R/Python等准备及健康兴趣须独立证明。",
+    "access_date": "2026-10-05"
+  },
+  {
+    "id": "P10",
+    "citation": "Yale MPH Biostatistics",
+    "url": "https://ysph.yale.edu/school-of-public-health/graduate-programs/master-of-public-health-mph-degree/biostatistics/",
+    "use": "此处是MPH不是MS；多元微积分和线代B以上、公共卫生动机等须独立证据。",
+    "access_date": "2026-10-05"
+  }
+]

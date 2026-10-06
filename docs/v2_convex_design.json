@@ -1,0 +1,14 @@
+{
+  "protocol_sha256": "e42f28a45bd4bd5619f6380a46eb052414d1581607781757b8cebc8dfaa9f8ab",
+  "training_scenario": "matched_heston",
+  "validation_scenario": "matched_heston",
+  "test_scenarios": [
+    "matched_heston",
+    "shifted_heston"
+  ],
+  "base_delta_vol": 0.2,
+  "coefficient_bound": 0.25,
+  "selection": "Minimum validation ES90 among successful regularization fits with validation mean cost <=0.18; if none feasible pick smallest validation cost and flag fallback",
+  "baseline_selection": "Same validation cost budget; select ES90 between band05 and band10; fallback minimum cost",
+  "all_results_exploratory": true
+}

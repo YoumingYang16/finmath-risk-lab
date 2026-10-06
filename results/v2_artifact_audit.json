@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "passed": true,
+  "checks_total": 8,
+  "checks_passed": 8,
+  "checks": [
+    {
+      "name": "Sources and frozen protocols",
+      "passed": true,
+      "details": {
+        "implementation_entries": 15,
+        "study_protocols": 3,
+        "historical_hashed_csvs": 6
+      }
+    },
+    {
+      "name": "Full coverage and CSV/JSON agreement",
+      "passed": true,
+      "details": {
+        "historical_candidate_metrics": 6912,
+        "historical_strategy_rows": 123552,
+        "simulation_candidate_rows": 11520,
+        "simulation_selected_rows": 1728,
+        "convex_fit_count": 24,
+        "convex_test_rows": 48
+      }
+    },
+    {
+      "name": "All recorded MSE variance bias decompositions",
+      "passed": true,
+      "details": {
+        "mse_decompositions_checked": 20988
+      }
+    },
+    {
+      "name": "Historical paired bootstrap and six-currency Holm",
+      "passed": true,
+      "details": {
+        "historical_bootstrap_comparisons_recomputed": 36,
+        "holm_families": 2
+      }
+    },
+    {
+      "name": "Repeated-selection intervals use 24 repetitions",
+      "passed": true,
+      "details": {
+        "simulation_intervals_recomputed": 192,
+        "independent_units_per_interval": 24
+      }
+    },
+    {
+      "name": "Convex intervals use 8 repetitions",
+      "passed": true,
+      "details": {
+        "convex_intervals_recomputed": 6,
+        "independent_units_per_interval": 8
+      }
+    },
+    {
+      "name": "Independent LP accounting choices risks and position extrema",
+      "passed": true,
+      "details": {
+        "fit_certificates_checked": 24,
+        "validation_choices_reconstructed": 8,
+        "test_rows_reconstructed": 48,
+        "daily_position_extrema_checked": 16,
+        "maximum_absolute_recomputed_mse_error": 1.3766765505351941e-14,
+        "out_of_sample_position_violation_rows": 10,
+        "maximum_reported_stationarity_residual": 2.528015990987953e-12
+      }
+    },
+    {
+      "name": "Selection uses validation and maps to unchanged test candidates",
+      "passed": true,
+      "details": {
+        "simulation_validation_only_choices_reconstructed": 1728
+      }
+    }
+  ],
+  "protocol_sha256": "e42f28a45bd4bd5619f6380a46eb052414d1581607781757b8cebc8dfaa9f8ab",
+  "auditor_sha256": "9a76b0aef89cfd31ff1d887b1c733a728a902e59de9deafac9ef7166688f69d2",
+  "runtime_seconds": 8.34117263600001,
+  "limitations": [
+    "Numerical and provenance checks do not establish novel theory, market executability or publication acceptance.",
+    "LP primal/dual residuals are checked and the economic objective/constraints replayed independently; complete solver primal and dual vectors are not serialized, so this is not a portable formal LP proof certificate.",
+    "Historical intervals remain retrospective and conditional; the audit does not create new untouched observations.",
+    "A fixed protocol hash proves byte consistency, not external preregistration or chronology independently witnessed by a third party."
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "review_date_hong_kong": "2026-10-06",
+  "scope": "Targeted primary-source literature review, not an exhaustive systematic review or a certification of originality.",
+  "papers": [
+    {
+      "id": "L01",
+      "title": "Using a Financial Training Criterion Rather than a Prediction Criterion",
+      "authors": [
+        "Yoshua Bengio"
+      ],
+      "year": 1997,
+      "url": "https://doi.org/10.1142/S0129065797000422",
+      "primary_url": "https://www.iro.umontreal.ca/~lisa/pointeurs/bengioy_TR1019.pdf",
+      "findings": "将模型直接按金融决策损益（包含交易成本）训练，而不是只按预测误差训练，已有早期实证先例。",
+      "relevance": "不得将金融目标优于纯预测目标的思想称为本项目首创；此文是一般决策导向动机，不是当前期权协议的同一方法。",
+      "verification": "核验作者版搜索索引与出版信息；作者PDF直接打开有访问保护。"
+    },
+    {
+      "id": "L02",
+      "title": "An Asymptotic Analysis of an Optimal Hedging Model for Option Pricing with Transaction Costs",
+      "authors": [
+        "A. Elizabeth Whalley",
+        "Paul Wilmott"
+      ],
+      "year": 1997,
+      "url": "https://doi.org/10.1111/1467-9965.00034",
+      "findings": "通过小交易成本渐近分析研究效用对冲，得到涉及gamma的近似策略与无交易区间。",
+      "relevance": "gamma相关带宽并非原创。项目constant-width band是强执行基线，不是该文最优渐近带宽的完整复现。",
+      "verification": "出版社摘要与正式卷期年份核验；页面online date不替代1997卷期。"
+    },
+    {
+      "id": "L03",
+      "title": "Optimal Hedging of Options with Small but Arbitrary Transaction Cost Structure",
+      "authors": [
+        "A. Elizabeth Whalley",
+        "Paul Wilmott"
+      ],
+      "year": 1999,
+      "url": "https://users.ox.ac.uk/~ofrcinfo/file_links/mf_papers/1999mf09.pdf",
+      "findings": "比例成本下越过无交易区间后交易到边界；固定成本下可能交易到区间内部。",
+      "relevance": "V2新增trade-to-boundary，明确区别于V1超过阈值回到目标delta；该结构属于文献基础，不是新算法。",
+      "verification": "Oxford机构托管原文，摘要检索可读，部分全文字体编码不利于文字提取。"
+    },
+    {
+      "id": "L04",
+      "title": "The Economic Value of Using Realized Volatility in Forecasting Future Implied Volatility",
+      "authors": [
+        "Wing Hong Chan",
+        "Ranjini Jha"
+      ],
+      "year": 2009,
+      "url": "https://doi.org/10.1111/j.1475-6803.2009.01249.x",
+      "findings": "预测和期权定价方面的改善，在交易成本存在时没有自动转化为显著交易及对冲经济收益。",
+      "relevance": "预测准确不保证对冲改善有直接先例；本项目应回答有限样本、期限对齐与选择规则具体何时失效。",
+      "verification": "出版社原始摘要与文章信息。"
+    },
+    {
+      "id": "L05",
+      "title": "Deep Hedging",
+      "authors": [
+        "Hans Bühler",
+        "Lukas Gonon",
+        "Josef Teichmann",
+        "Ben Wood"
+      ],
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1802.03042",
+      "publication_note": "2018作者预印本；文献常以2019期刊版本引用。",
+      "findings": "在交易成本等市场摩擦下学习对冲策略，优化凸风险度量，并给出Heston合成市场实验。",
+      "relevance": "神经网络、CVaR、Heston或摩擦下直接对冲均不能单独作为本项目创新声明。当前V2没有声称复现完整deep hedging。",
+      "verification": "作者arXiv摘要与版本记录。"
+    },
+    {
+      "id": "L06",
+      "title": "No-Transaction Band Network: A Neural Network Architecture for Efficient Deep Hedging",
+      "authors": [
+        "Shota Imaki",
+        "Kentaro Imajo",
+        "Katsuya Ito",
+        "Kentaro Minami",
+        "Kei Nakagawa"
+      ],
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2103.01775",
+      "publication_note": "2021预印本，arXiv链接期刊DOI 10.3905/jfds.2023.1.125。",
+      "findings": "学习无交易区间的网络结构，研究欧洲及回望期权，并给出相应理论和数值表现。",
+      "relevance": "学习区间、使用clamp或减少交易并非新颖贡献。constant-width band是其中思想的简单基线，不等价于论文网络。",
+      "verification": "作者arXiv摘要与关联DOI。"
+    },
+    {
+      "id": "L07",
+      "title": "Smart “Predict, then Optimize”",
+      "authors": [
+        "Adam N. Elmachtoub",
+        "Paul Grigas"
+      ],
+      "year": 2017,
+      "url": "https://arxiv.org/abs/1710.08005",
+      "publication_note": "2017初稿，2020 arXiv修订；引用此处的作者版本。",
+      "findings": "用下游优化问题定义SPO损失，提出SPO+凸替代，分析一致性并展示优化应用。",
+      "relevance": "本项目借鉴预测与决策目标不同这一动机。路径对冲不直接满足文中线性目标框架，不能套用其理论保证或称当前网格选择为SPO+训练。",
+      "verification": "作者arXiv摘要与版本记录。"
+    },
+    {
+      "id": "L08",
+      "title": "Robust Hedging GANs",
+      "authors": [
+        "Yannick Limmer",
+        "Blanka Horvath"
+      ],
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2307.02310",
+      "publication_note": "原预印本标题；关联期刊版本为Robust Hedging GANs: Towards Automated Robustification of Hedging Strategies。",
+      "findings": "将深度对冲与对抗模型生成结合，针对数据生成机制误设和估计误差处理模型风险。",
+      "relevance": "模型不确定性下对冲有直接先例。V2压力测试没有训练对抗生成器，也不应称为实现该论文。",
+      "verification": "作者arXiv摘要与关联出版DOI。"
+    },
+    {
+      "id": "L09",
+      "title": "Bridging Stochastic Control and Deep Hedging: Structural Priors for No-Transaction Band Networks",
+      "authors": [
+        "Jules Arzel",
+        "Noureddine Lehdili"
+      ],
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2603.29994",
+      "publication_note": "2026-03-31预印本，不据此宣称已经同行评审。",
+      "findings": "研究delta居中、Whalley–Wilmott带宽先验及soft clamp，比较跨交易成本条件的泛化。",
+      "relevance": "即使以后加入gamma/cost-aware神经带宽，也必须对照此直接近邻，不能因新增该模块就声称原创架构。",
+      "verification": "arXiv原文摘要与提交记录。"
+    },
+    {
+      "id": "L10",
+      "title": "Rethinking Synthetic Scenario Realism: Compatibility, Not Fidelity, Drives Hedging Performance",
+      "authors": [
+        "Ryuji Hashimoto",
+        "Masanori Hirano",
+        "Ryota Ozaki",
+        "Kentaro Imajo"
+      ],
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2608.20842",
+      "publication_note": "2026-08-21初稿，2026-09-04修订预印本。",
+      "findings": "提出生成器与对冲任务的compatibility，讨论统计逼真与下游对冲质量的分离，给出学习误差与compatibility gap分解。",
+      "relevance": "统计模型好不等于决策好及生成分布偏移本身已有近邻；V2贡献边界在特定有限样本选模与期限对齐的可重复经验研究。",
+      "verification": "arXiv原文摘要与提交记录。"
+    },
+    {
+      "id": "L11",
+      "title": "A Comparison of Biased Simulation Schemes for Stochastic Volatility Models",
+      "authors": [
+        "Roger Lord",
+        "Remmert Koekkoek",
+        "Dick van Dijk"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1080/14697680802392496",
+      "primary_url": "https://papers.tinbergen.nl/06046.pdf",
+      "publication_note": "2010期刊版本；机构工作论文页面内容标明2008-02-06修订。",
+      "findings": "比较随机波动率Euler修正方案；full truncation对漂移和扩散中的方差取正部，但保留内部原始负方差状态，并明确讨论离散偏差。",
+      "relevance": "V2 Heston模拟遵循此full-truncation结构加log-Euler spot；通过细网格敏感性诊断离散误差，不能称exact Heston simulator。",
+      "verification": "Tinbergen机构原文方法段及Erasmus作者机构书目。"
+    }
+  ],
+  "assessment": {
+    "current_v1": "Substantial course-extension computational project; current ingredients and general forecast-versus-hedging question have direct prior literature.",
+    "v2_potential_contribution": "A bounded reproducible empirical study of maturity alignment and finite-sample selection objectives under costs and distribution shift, conditional on actual stable evidence.",
+    "not_claimed": [
+      "First decision-focused finance model",
+      "New deep-hedging or no-transaction-band architecture",
+      "Market-implied calibration or tradable profits",
+      "Untouched 2021–2025 historical test after V1 examination",
+      "Publication acceptance or absolute optimality"
+    ],
+    "publication_gate": "Requires comparison with close prior literature, defensible distinct research contribution, independent technical review, and actual experimental evidence. Code size is not publication evidence."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "pages": 17,
+  "tables": 10,
+  "figures": 7,
+  "report_sha256": "7b10ee7297c4a85807244fb50f9768923032313cca936aa633644bc6a3ca8afc",
+  "renderer": "Read-only Microsoft Word COM PDF export; bundled PDFium page rendering",
+  "canonical_renderer_failure": "Bundled render_docx.py attempted; soffice.exe absent in dependency runtime",
+  "source_unchanged_after_export": true,
+  "visual_review": "All final pages reviewed at original size; byte-identical images reused where layout did not change. Orphan table header and sparse trailing page repaired.",
+  "final_rerender_pixel_equivalence": "17/17 page PNGs identical to the visually reviewed final revision",
+  "checks": [
+    "no blank page",
+    "no clipped figures or missing glyphs",
+    "table headers repeat and stay with first data row",
+    "all report input hashes current",
+    "all validated source hashes current"
+  ],
+  "page_png_sha256": {
+    "1": "d525ae3b4b82753d0814d226b711ecf1a3fb8e86ab2e909454053079e8604c6f",
+    "2": "1671982622d19f011acee5e0460ef454893ba19feb14b45f0907bfcb56c4045d",
+    "3": "c8ce2b70e12f84f5d1a4ef7f7faf35bca8f059b111c075a458410f9729df5d20",
+    "4": "78a8366d1c22b446d992c0322d212d49c894715e12975912b7acf5714222ddd8",
+    "5": "bb17f137cee75f05e20190d592ed1a8c309ba144536376b55b523eb34c8939ff",
+    "6": "4f37c9adb7e55b637b98dcc7e91bae945305c3a828bb436c26d695a55827b69d",
+    "7": "db9980fad1fc35a4cd86963deefd73efdefdb6c52c2cd62d2f7f3118cd670886",
+    "8": "9af535373f7314f5fa1472c1ffeb7df09bd6fcded40fb39253b7e02c04d6dbbc",
+    "9": "009ed613bd7f50ca0984fca90de27afbd902a59fcde66939c031c4f1f620cd1d",
+    "10": "0d3b6e1e8ad859c81d5e6ccd44f835ab994df9ba89753961a0c20bab7bff58bc",
+    "11": "884d7902d8b62cfd5b721b0be2a9ed80cd48977cbc1e559ed80de217412a0b24",
+    "12": "9e0c13e6fcd6ab81088df60b2537de431eabb2de8d7e6b4340f342cedeeb9588",
+    "13": "3dfe0f6020aa7967240d71d773857d85e4dd2d38acfee4f66eb8afd24c452f30",
+    "14": "231259422eab710250c1baf570003e848851e7a2856d0ba5e8b5b74db0dbfc38",
+    "15": "c80c349f7fda1d7ce8ad6306d4f725c80ea11b3277b2ce380571b650ed5afee3",
+    "16": "b963e5c645cc5c8fbb338975b420d91ce3973b7ba4b87a902fa2758c3b66a484",
+    "17": "d3c31964de77b866b7e1aab32e81805bb261665c8f5a9ea95612e7c7cde3839d"
+  }
+}

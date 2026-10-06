@@ -1,0 +1,116 @@
+{
+  "checked_on": "2026-10-06",
+  "assessment_timezone": "Asia/Hong_Kong",
+  "scope": "Publication routes for FinMath Risk Lab; assessment is advisory, not an acceptance forecast. No submission or organizer contact was made.",
+  "overall_assessment": {
+    "v1": "A reproducible course-extension computational study; a plausible foundation for a poster or research-in-progress submission. Its software completeness does not by itself establish a novel research contribution.",
+    "v2_if_successfully_validated": "A focused methods-evaluation or reproducible-benchmark manuscript may be defensible if it establishes a specific literature gap, meaningful baselines, uncertainty estimates, ablations and honest limits. Added model count or source lines alone do not establish publishability.",
+    "core_question": "When does improved volatility prediction fail to improve cost-constrained hedging, and how stable is policy selection under estimation error and distribution shift?",
+    "boundaries": ["ECB reference exchange rates are not executable FX quotes or option prices.", "Hypothetical option experiments can support methodological claims but cannot establish real-market trading profits.", "Conferences are not uniformly easier than journals; archival papers and non-archival presentations are different outputs.", "A human author must actually review, understand and defend the research; AI assistance cannot manufacture that contribution."]
+  },
+  "venues": [
+    {
+      "id": "SIAM_FM27",
+      "name": "SIAM Conference on Financial Mathematics and Engineering 2027",
+      "route": "Contributed poster or lecture abstract",
+      "status_on_checked_date": "open",
+      "deadline": "2026-12-15 23:59 Eastern Time",
+      "format": "A title and a brief abstract; abstract at most 1,500 characters including spaces",
+      "event": "2027-06-15 to 2027-06-18; Arlington, Virginia, USA; in person",
+      "publication_status": "Presentation proposal; the call does not offer an archival full-paper publication through this abstract route. Do not list an accepted poster as a published conference paper.",
+      "fit": "Strong topical fit: option pricing and hedging, model risk, uncertainty, computational finance. Most practical initial research-feedback route after human review.",
+      "conditions": "Co-chair review and approval; presenting author registers and attends. No remote or prerecorded presentation.",
+      "sources": ["https://www.siam.org/conferences-events/siam-conferences/fm27/", "https://www.siam.org/conferences-events/siam-conferences/fm27/submissions/"]
+    },
+    {
+      "id": "IEEE_SSCI_CIFER27",
+      "name": "IEEE SSCI 2027 Symposium on CI for Financial Engineering and Economics",
+      "route": "Late-breaking extended abstract or poster-only abstract",
+      "status_on_checked_date": "late_breaking_and_poster_open; full_and_short_closed",
+      "deadline": "2026-11-01; no timezone stated on the fetched official CFP",
+      "full_short_deadline": "2026-09-10 (extended official CFP; expired)",
+      "format": "Late-breaking: up to 2 pages including references. Poster-only: up to 250 words.",
+      "event": "2027-02-14 to 2027-02-17; Gold Coast, Queensland, Australia",
+      "publication_status": "Late-breaking and poster-only submissions are explicitly excluded from proceedings; accepted titles and author names appear on the website. In the 2027 CFP, short papers are also non-proceedings; only full papers are designated for proceedings.",
+      "fit": "Strong match for reproducible comparisons of prediction and hedging under costs; an early-results or methodology-critique poster is a realistic format to consider.",
+      "conditions": "Double-anonymous review. Originality and simultaneous-submission restrictions apply even to presentation routes. Human author contribution, registration and presentation are required.",
+      "source_note": "Web tool could not fetch attend.ieee.org; the official HTML was read successfully via a read-only HTTPS request. Instructions page still states the old full-paper date; CFP explicitly shows its extension.",
+      "sources": ["https://attend.ieee.org/ssci-2027/submissions/call-for-papers/", "https://attend.ieee.org/ssci-2027/submissions/instructions/", "https://attend.ieee.org/ssci-2027/symposia/financial-engineering-economics/"]
+    },
+    {
+      "id": "ACM_ICAIF_MAIN",
+      "name": "ACM International Conference on AI in Finance, main track",
+      "route": "Archival research paper",
+      "status_on_checked_date": "2026_main_track_closed; no_verified_2027_call_found",
+      "deadline": "2026-08-09 AoE (extended; expired)",
+      "format": "2026 rules: 8 pages total in ACM sigconf format, including figures and references; self-contained, no appendices or supplementary materials",
+      "event": "2026-11-14 to 2026-11-17; Milan, Italy",
+      "publication_status": "Accepted main-track papers, whether presented orally or as posters, appear in ACM proceedings. This is different from an abstract-only poster.",
+      "fit": "A longer-term target after demonstrating an identifiable AI/financial-method or benchmark contribution, rather than integration of established methods alone. No acceptance probability is supportable.",
+      "conditions": "Double-blind review, no rebuttal; no simultaneous archival submissions; in-person presentation expected. Do not invent a 2027 deadline.",
+      "sources": ["https://icaif2026.org/call-for-papers.html"]
+    },
+    {
+      "id": "RAIOPS4FIN26",
+      "name": "RAIOps4Fin 2026 workshop at ICAIF 2026",
+      "route": "Focused model-risk, validation and auditability workshop paper",
+      "status_on_checked_date": "open_but_near_deadline",
+      "deadline": "2026-10-12 23:59 AoE",
+      "format": "At most 6 pages excluding references and appendices; double-blind",
+      "event": "2026-11-14; Milan, Italy",
+      "publication_status": "Accepted papers of at least 5 pages may be considered for CEUR Workshop Proceedings with author consent. Inclusion is not guaranteed and is not ICAIF main-track publication.",
+      "fit": "Conditional fit if the paper centers on empirical model-risk validation and an auditable research workflow. The current project does not demonstrate industrial deployment or regulatory compliance.",
+      "conditions": "At least one author registers and attends. A close deadline is not a reason to skip literature review or human validation. Organizer and main-workshop pages differ on notification date, so no notification promise is made.",
+      "sources": ["https://raiops4fin2026.github.io/ICAIF/", "https://icaif2026.org/workshop/"]
+    },
+    {
+      "id": "JOSS",
+      "name": "Journal of Open Source Software",
+      "route": "Peer-reviewed research-software journal article",
+      "status_on_checked_date": "rolling_submissions; project_not_currently_eligible",
+      "deadline": null,
+      "format": "Research-software article and publicly accessible OSI-licensed code, documentation and tests",
+      "publication_status": "Software journal article, not a financial-results research paper",
+      "fit": "Long-term option if the project becomes a maintained, reusable research library with demonstrated research use; not an immediate outlet for a newly generated repository.",
+      "conditions": "Current screening requires more than six months of active public development, research impact and sound open-source practices. A concentrated code dump does not qualify. Submitting author must be a major contributor.",
+      "sources": ["https://joss.readthedocs.io/en/latest/submitting.html", "https://joss.readthedocs.io/en/latest/paper.html"]
+    },
+    {
+      "id": "SIURO",
+      "name": "SIAM Undergraduate Research Online",
+      "route": "Peer-reviewed undergraduate research journal article",
+      "status_on_checked_date": "rolling_submissions; human_advisor_and_student_contribution_not_yet_verified",
+      "deadline": null,
+      "format": "English PDF, approximately 20 pages and 3 MB; abstract at most 250 words. Substantial length exceptions need editorial and referee justification.",
+      "publication_status": "Research journal article after review and acceptance; not a conference presentation. Undergraduate-period research and substantial student contributions must be documented.",
+      "fit": "A possible journal route for a focused undergraduate computational-mathematics study after real human supervision and contribution review. Current AI-assisted software completeness alone does not establish eligibility or publishable novelty.",
+      "conditions": "An actual project advisor must supply a letter documenting undergraduate-period research, substantial student work, student status and independent contribution, and nominate three reviewers. Advisors may be faculty or supervisors from nonacademic organizations or government laboratories. No such advisor letter has been verified for this project. AI cannot act as the advisor. Prior publication and concurrent journal-review restrictions apply; preliminary conference versions must be disclosed.",
+      "sources": ["https://www.siam.org/publications/siam-journals/siam-undergraduate-research-online-siuro/instructions-for-authors/"]
+    }
+  ],
+  "ai_policies": [
+    {
+      "publisher": "ACM",
+      "verified_policy": "The May 2026 policy distinguishes research assistance from writing assistance. AI used in research design, coding, experiments, analysis or evidence must be described in detail in Methods; writing-only assistance no longer requires disclosure under the general policy. Authors remain accountable. This project is research assistance, not merely proofreading.",
+      "sources": ["https://www.acm.org/publications/policies/new-acm-policy-on-authorship", "https://iss.acm.org/2026/authors/papers/"],
+      "verification_note": "Canonical policy page blocked direct fetching; current text was corroborated by its indexed official policy and the official ACM ISS 2026 author page. Venue-specific rules must still be rechecked before submission."
+    },
+    {
+      "publisher": "IEEE",
+      "verified_policy": "AI-generated article content, including code, figures and text, must be disclosed in acknowledgements, identifying the system, affected parts and scope of use. SSCI submission instructions also explicitly require AI-text disclosure and significant human author contributions.",
+      "sources": ["https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/", "https://attend.ieee.org/ssci-2027/submissions/instructions/"]
+    },
+    {
+      "publisher": "JOSS",
+      "verified_policy": "AI usage disclosure must identify tools, scope and actual human review/validation and design decisions. Authors retain responsibility. AI use for author-editor/reviewer conversational interactions is disallowed except translation.",
+      "sources": ["https://joss.readthedocs.io/en/latest/submitting.html"]
+    },
+    {
+      "publisher": "SIAM Publications",
+      "verified_policy": "May 2026 version requires human authors able to defend the submission and disclosure of substantive AI use with responsibility retained by authors. Its publication-policy scope should not be silently equated to a separately specified FM27 abstract rule.",
+      "sources": ["https://epubs.siam.org/artificial-intelligence"],
+      "verification_note": "No separate FM27-specific AI instruction was found in its abstract CFP. Transparent disclosure and real human understanding remain the appropriate project practice."
+    }
+  ],
+  "recommended_order": ["First prepare a defensible narrow research question and complete the V2 experiments without changing hypotheses in response to test outcomes.", "Use FM27 or SSCI/CIFEr27 presentation routes to seek expert discussion, selecting one compatible submission path rather than submitting the same work everywhere simultaneously.", "Consider RAIOps4Fin only if its model-risk scope fits the completed work and the human author can genuinely validate it before the near deadline.", "Develop an archival manuscript for a future verified ICAIF or other relevant CFP only after the scientific contribution survives literature and robustness checks.", "Treat JOSS as a later maintained-software route; do not fabricate or backdate development history."]
+}

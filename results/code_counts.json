@@ -1,0 +1,287 @@
+{
+  "scope": "Python/JavaScript/CSS/HTML implementation, tests, and reproducible authoring scripts; includes comments; excludes dependencies, data, result tables and generated documents.",
+  "total": {
+    "files": 51,
+    "physical_lines": 6844,
+    "nonblank_lines_including_comments": 6068
+  },
+  "categories": {
+    "risklab": {
+      "files": 11,
+      "physical_lines": 1631,
+      "nonblank_lines_including_comments": 1447
+    },
+    "scripts": {
+      "files": 20,
+      "physical_lines": 3166,
+      "nonblank_lines_including_comments": 2898
+    },
+    "tests": {
+      "files": 17,
+      "physical_lines": 1679,
+      "nonblank_lines_including_comments": 1359
+    },
+    "web": {
+      "files": 3,
+      "physical_lines": 368,
+      "nonblank_lines_including_comments": 364
+    }
+  },
+  "files": [
+    {
+      "file": "risklab/__init__.py",
+      "physical_lines": 3,
+      "nonblank_lines_including_comments": 2
+    },
+    {
+      "file": "risklab/advanced_hedging.py",
+      "physical_lines": 81,
+      "nonblank_lines_including_comments": 72
+    },
+    {
+      "file": "risklab/convex_hedging.py",
+      "physical_lines": 94,
+      "nonblank_lines_including_comments": 84
+    },
+    {
+      "file": "risklab/hedging.py",
+      "physical_lines": 142,
+      "nonblank_lines_including_comments": 132
+    },
+    {
+      "file": "risklab/historical.py",
+      "physical_lines": 293,
+      "nonblank_lines_including_comments": 259
+    },
+    {
+      "file": "risklab/paths.py",
+      "physical_lines": 81,
+      "nonblank_lines_including_comments": 71
+    },
+    {
+      "file": "risklab/pricing.py",
+      "physical_lines": 227,
+      "nonblank_lines_including_comments": 200
+    },
+    {
+      "file": "risklab/server.py",
+      "physical_lines": 294,
+      "nonblank_lines_including_comments": 261
+    },
+    {
+      "file": "risklab/statistics.py",
+      "physical_lines": 72,
+      "nonblank_lines_including_comments": 62
+    },
+    {
+      "file": "risklab/stochastic_volatility.py",
+      "physical_lines": 72,
+      "nonblank_lines_including_comments": 66
+    },
+    {
+      "file": "risklab/term_forecasting.py",
+      "physical_lines": 272,
+      "nonblank_lines_including_comments": 238
+    },
+    {
+      "file": "scripts/benchmark_parallel.py",
+      "physical_lines": 158,
+      "nonblank_lines_including_comments": 139
+    },
+    {
+      "file": "scripts/build_evidence_catalog.py",
+      "physical_lines": 125,
+      "nonblank_lines_including_comments": 122
+    },
+    {
+      "file": "scripts/build_figures.py",
+      "physical_lines": 86,
+      "nonblank_lines_including_comments": 79
+    },
+    {
+      "file": "scripts/build_report.py",
+      "physical_lines": 303,
+      "nonblank_lines_including_comments": 296
+    },
+    {
+      "file": "scripts/build_research_store.py",
+      "physical_lines": 58,
+      "nonblank_lines_including_comments": 53
+    },
+    {
+      "file": "scripts/build_v2_figures.py",
+      "physical_lines": 82,
+      "nonblank_lines_including_comments": 78
+    },
+    {
+      "file": "scripts/build_v2_report.py",
+      "physical_lines": 309,
+      "nonblank_lines_including_comments": 288
+    },
+    {
+      "file": "scripts/fetch_ecb.py",
+      "physical_lines": 104,
+      "nonblank_lines_including_comments": 93
+    },
+    {
+      "file": "scripts/package_release.py",
+      "physical_lines": 50,
+      "nonblank_lines_including_comments": 43
+    },
+    {
+      "file": "scripts/query_research_store.py",
+      "physical_lines": 23,
+      "nonblank_lines_including_comments": 18
+    },
+    {
+      "file": "scripts/reproduce.py",
+      "physical_lines": 22,
+      "nonblank_lines_including_comments": 17
+    },
+    {
+      "file": "scripts/reproduce_v2.py",
+      "physical_lines": 14,
+      "nonblank_lines_including_comments": 14
+    },
+    {
+      "file": "scripts/run_convex_study.py",
+      "physical_lines": 81,
+      "nonblank_lines_including_comments": 74
+    },
+    {
+      "file": "scripts/run_historical.py",
+      "physical_lines": 178,
+      "nonblank_lines_including_comments": 162
+    },
+    {
+      "file": "scripts/run_selection_study.py",
+      "physical_lines": 334,
+      "nonblank_lines_including_comments": 299
+    },
+    {
+      "file": "scripts/run_simulations.py",
+      "physical_lines": 178,
+      "nonblank_lines_including_comments": 163
+    },
+    {
+      "file": "scripts/run_validation.py",
+      "physical_lines": 52,
+      "nonblank_lines_including_comments": 47
+    },
+    {
+      "file": "scripts/run_walkforward.py",
+      "physical_lines": 267,
+      "nonblank_lines_including_comments": 246
+    },
+    {
+      "file": "scripts/verify_artifacts.py",
+      "physical_lines": 310,
+      "nonblank_lines_including_comments": 274
+    },
+    {
+      "file": "scripts/verify_v2_artifacts.py",
+      "physical_lines": 432,
+      "nonblank_lines_including_comments": 393
+    },
+    {
+      "file": "tests/browser_qa.cjs",
+      "physical_lines": 139,
+      "nonblank_lines_including_comments": 139
+    },
+    {
+      "file": "tests/test_advanced_hedging.py",
+      "physical_lines": 57,
+      "nonblank_lines_including_comments": 43
+    },
+    {
+      "file": "tests/test_artifact_audit.py",
+      "physical_lines": 83,
+      "nonblank_lines_including_comments": 66
+    },
+    {
+      "file": "tests/test_convex_hedging.py",
+      "physical_lines": 47,
+      "nonblank_lines_including_comments": 37
+    },
+    {
+      "file": "tests/test_hedging.py",
+      "physical_lines": 122,
+      "nonblank_lines_including_comments": 99
+    },
+    {
+      "file": "tests/test_historical.py",
+      "physical_lines": 203,
+      "nonblank_lines_including_comments": 157
+    },
+    {
+      "file": "tests/test_parallel_benchmark.py",
+      "physical_lines": 38,
+      "nonblank_lines_including_comments": 29
+    },
+    {
+      "file": "tests/test_paths.py",
+      "physical_lines": 50,
+      "nonblank_lines_including_comments": 37
+    },
+    {
+      "file": "tests/test_pricing.py",
+      "physical_lines": 155,
+      "nonblank_lines_including_comments": 128
+    },
+    {
+      "file": "tests/test_selection_study.py",
+      "physical_lines": 73,
+      "nonblank_lines_including_comments": 54
+    },
+    {
+      "file": "tests/test_server.py",
+      "physical_lines": 160,
+      "nonblank_lines_including_comments": 134
+    },
+    {
+      "file": "tests/test_statistics.py",
+      "physical_lines": 62,
+      "nonblank_lines_including_comments": 48
+    },
+    {
+      "file": "tests/test_stochastic_volatility.py",
+      "physical_lines": 58,
+      "nonblank_lines_including_comments": 45
+    },
+    {
+      "file": "tests/test_term_forecasting.py",
+      "physical_lines": 144,
+      "nonblank_lines_including_comments": 117
+    },
+    {
+      "file": "tests/test_v2_convex_results.py",
+      "physical_lines": 91,
+      "nonblank_lines_including_comments": 67
+    },
+    {
+      "file": "tests/test_v2_selection_results.py",
+      "physical_lines": 69,
+      "nonblank_lines_including_comments": 56
+    },
+    {
+      "file": "tests/test_walkforward_artifacts.py",
+      "physical_lines": 128,
+      "nonblank_lines_including_comments": 103
+    },
+    {
+      "file": "web/app.js",
+      "physical_lines": 275,
+      "nonblank_lines_including_comments": 275
+    },
+    {
+      "file": "web/index.html",
+      "physical_lines": 83,
+      "nonblank_lines_including_comments": 79
+    },
+    {
+      "file": "web/styles.css",
+      "physical_lines": 10,
+      "nonblank_lines_including_comments": 10
+    }
+  ]
+}

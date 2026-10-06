@@ -1,0 +1,9 @@
+replicate,seed,selected_penalty,lp_validation_feasible,baseline_width,baseline_validation_feasible
+0,18101,0.1,True,0.05,True
+1,18102,0.1,True,0.05,True
+2,18103,0.1,True,0.05,True
+3,18104,0.1,True,0.05,True
+4,18105,0.1,True,0.05,True
+5,18106,0.0,True,0.05,True
+6,18107,0.1,True,0.05,True
+7,18108,0.1,True,0.05,True

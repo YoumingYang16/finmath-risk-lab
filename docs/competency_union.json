@@ -1,0 +1,501 @@
+{
+  "title": "十项目相关能力并集",
+  "review_date": "2026-10-05",
+  "scope": "Union of relevant competency emphases from the ten official program pages; not an exhaustive admissions checklist or claim of meeting all curricula.",
+  "operation": "union",
+  "programs": [
+    {
+      "id": "CUHK_DSBS",
+      "name": "香港中文大学 DSBS",
+      "url": "https://dsbs.cuhk.edu.hk/programme-details/",
+      "emphases": [
+        "统计推断",
+        "金融时间序列",
+        "Monte Carlo",
+        "Python金融风险分析",
+        "研究报告"
+      ],
+      "note": "课程含 STAT5101/5106、STAT6104、RMSC6007；培养内容不是全部入学硬门槛。"
+    },
+    {
+      "id": "CMU_BIDA",
+      "name": "CMU MISM BIDA",
+      "url": "https://www.heinz.cmu.edu/programs/information-systems-management-master/bida",
+      "emphases": [
+        "计量与统计",
+        "不确定性决策",
+        "数据库与软件",
+        "金融分析",
+        "沟通与管理"
+      ],
+      "note": "数学、统计、编程的正式先修及学分成绩需独立核验；项目不能替代。"
+    },
+    {
+      "id": "HKU_FC",
+      "name": "香港大学 CS Financial Computing",
+      "url": "https://master.cds.hku.hk/msccs/msc-in-computer-science-stream-financial-computing/",
+      "emphases": [
+        "衍生品计算",
+        "金融数学",
+        "定量软件设计"
+      ],
+      "note": "FITE7405/7406为具体课程连接；课程先修不等于整个项目统一招生要求。"
+    },
+    {
+      "id": "BERKELEY",
+      "name": "UC Berkeley Master of Analytics",
+      "url": "https://graduate.catalog.berkeley.edu/programs/162G4ANLTG",
+      "emphases": [
+        "统计",
+        "优化",
+        "仿真",
+        "风险管理",
+        "业务决策"
+      ],
+      "note": "本科概率或统计、线代和编程准备需成绩等证明；额外写作样本不审阅。"
+    },
+    {
+      "id": "PENN_SE",
+      "name": "Penn MSE Systems Engineering",
+      "url": "https://www.ese.upenn.edu/academics/masters/systems-engineering-program/mse-in-se-degree-requirements/",
+      "emphases": [
+        "系统建模",
+        "仿真",
+        "概率计算",
+        "优化",
+        "金融应用"
+      ],
+      "note": "课程分数据科学、系统建模、系统设计与优化；应用领域有金融。"
+    },
+    {
+      "id": "PENN_DSAI",
+      "name": "Penn MSE Data Science and Artificial Intelligence",
+      "url": "https://dsai.engineering.upenn.edu/curriculum/",
+      "emphases": [
+        "统计",
+        "机器学习",
+        "算法",
+        "数据系统",
+        "负责地使用模型"
+      ],
+      "note": "外部申请要求相当于CS辅修的课程与数学统计能力；未将4+1校内GPA要求套用外部申请。"
+    },
+    {
+      "id": "NTU_DS",
+      "name": "NTU MSc Data Science",
+      "url": "https://www.ntu.edu.sg/spms/admissions/grad/detail/master-of-science-in-data-science-%28msds%29",
+      "emphases": [
+        "数学准备",
+        "数据准备",
+        "建模",
+        "解释与可视化",
+        "跨学科应用"
+      ],
+      "note": "官方背景为相关计算学科及扎实数学训练；全数据流程与Capstone是培养重点。"
+    },
+    {
+      "id": "IMPERIAL",
+      "name": "Imperial Applied Computational Science and Engineering",
+      "url": "https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-computational-science/",
+      "emphases": [
+        "数值方法",
+        "计算数学",
+        "软件验证",
+        "并行计算",
+        "技术报告"
+      ],
+      "note": "数值计算和项目方法可迁移；本研究不构成大型集群或自然科学领域经验。"
+    },
+    {
+      "id": "HARVARD",
+      "name": "Harvard SM Health Data Science",
+      "url": "https://hsph.harvard.edu/program/sm-health-data-science/",
+      "emphases": [
+        "统计推断",
+        "计算与机器学习",
+        "模型评价",
+        "健康科学兴趣",
+        "结果沟通"
+      ],
+      "note": "当前SM-80；多元积分、线代和R/Python等准备及健康兴趣须独立证明。"
+    },
+    {
+      "id": "YALE",
+      "name": "Yale MPH Biostatistics",
+      "url": "https://ysph.yale.edu/school-of-public-health/graduate-programs/master-of-public-health-mph-degree/biostatistics/",
+      "emphases": [
+        "概率统计",
+        "应用研究",
+        "生物统计",
+        "公共卫生实践",
+        "合作沟通"
+      ],
+      "note": "此处是MPH不是MS；多元微积分和线代B以上、公共卫生动机等须独立证据。"
+    }
+  ],
+  "competencies": [
+    {
+      "id": "C01",
+      "name": "问题定义与研究设计",
+      "description": "提出一个可检验的研究问题，事先确定目标和对照。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "docs/simulation_protocol.json",
+        "docs/historical_method.md"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C02",
+      "name": "数学与概率建模",
+      "description": "解释无套利定价、风险中性与历史概率的区别、自融资账本和假设。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "risklab/pricing.py",
+        "risklab/paths.py",
+        "risklab/hedging.py"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C03",
+      "name": "统计推断与不确定性",
+      "description": "成对独立模拟CI、相关历史数据的分块bootstrap与敏感性。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "risklab/statistics.py",
+        "risklab/historical.py",
+        "results/simulation_comparisons.csv"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C04",
+      "name": "真实数据处理",
+      "description": "公开来源、缺失处理、单位、时间边界、数据字典及hash。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "data",
+        "scripts/fetch_ecb.py",
+        "results/historical_summary.json"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C05",
+      "name": "机器学习与泛化评价",
+      "description": "真正训练的正则回归、训练期预处理、validation选择及锁定测试。",
+      "programs": [
+        "PENN_DSAI",
+        "NTU_DS",
+        "HARVARD",
+        "CMU_BIDA",
+        "CUHK_DSBS",
+        "PENN_SE"
+      ],
+      "evidence": [
+        "risklab/historical.py",
+        "results/historical_forecasts.csv"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C06",
+      "name": "数值算法与动态规划",
+      "description": "解析式、二叉树倒推与美式提前行权扩展、Monte Carlo、Greeks和IV。",
+      "programs": [
+        "HKU_FC",
+        "IMPERIAL",
+        "PENN_SE",
+        "PENN_DSAI",
+        "CUHK_DSBS"
+      ],
+      "evidence": [
+        "risklab/pricing.py",
+        "results/numerical_benchmarks.csv"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C07",
+      "name": "约束决策与优化",
+      "description": "有限候选策略上的成本约束选择，验证选择并独立评价，不宣称全局最优。",
+      "programs": [
+        "CMU_BIDA",
+        "BERKELEY",
+        "PENN_SE",
+        "CUHK_DSBS",
+        "HKU_FC"
+      ],
+      "evidence": [
+        "scripts/run_simulations.py",
+        "results/simulation_selection.csv"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C08",
+      "name": "软件系统与可靠性",
+      "description": "模块化API、SQL证据库、输入约束、账本核对、异常反馈与回归测试。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "risklab/server.py",
+        "scripts/build_research_store.py",
+        "tests",
+        "docs/api.md"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C09",
+      "name": "可复现计算与数据治理",
+      "description": "配置、随机种子、原始快照、环境、校验清单和一键复现。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "scripts",
+        "data",
+        "results",
+        "docs/reproducibility.md"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C10",
+      "name": "批判性评估与风险意识",
+      "description": "区分数值/估计/结构/执行误差，记录失效条件、负结果和测试集限制。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "results/simulation_summary.json",
+        "results/historical_summary.json",
+        "report"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C11",
+      "name": "可视化与研究表达",
+      "description": "中文交互工作台，带来源的图表，论文式报告和英文摘要。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "web",
+        "figures",
+        "report"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C12",
+      "name": "金融业务与经济解释",
+      "description": "区分预测损失、复制损失和费用；参考汇率不当成可交易报价。",
+      "programs": [
+        "CMU_BIDA",
+        "CUHK_DSBS",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE"
+      ],
+      "evidence": [
+        "docs/historical_method.md",
+        "risklab/hedging.py",
+        "report"
+      ],
+      "status": "implemented_validated"
+    },
+    {
+      "id": "C13",
+      "name": "并行与大规模计算",
+      "description": "已实测等量分块串行与2/4进程Monte Carlo，保留并行更慢的结果；未验证MPI/GPU集群或超大规模数据系统。",
+      "programs": [
+        "IMPERIAL",
+        "PENN_DSAI",
+        "CMU_BIDA",
+        "HARVARD"
+      ],
+      "evidence": [
+        "scripts/benchmark_parallel.py",
+        "results/parallel_benchmark.json"
+      ],
+      "status": "partial"
+    },
+    {
+      "id": "C14",
+      "name": "隐私 公平性与负责的研究",
+      "description": "公开非个人数据、来源许可与AI贡献透明；未进行人群公平性或患者隐私实证。",
+      "programs": [
+        "PENN_DSAI",
+        "HARVARD",
+        "YALE",
+        "NTU_DS",
+        "CMU_BIDA"
+      ],
+      "evidence": [
+        "docs/data_governance.md",
+        "docs/contribution_record.md"
+      ],
+      "status": "partial"
+    },
+    {
+      "id": "C15",
+      "name": "健康领域 生物统计与公共卫生",
+      "description": "金融方法只提供可迁移的定量准备；医疗数据、临床或人群问题、流行病学及公共卫生动机需其他证据。",
+      "programs": [
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [],
+      "status": "external_evidence_required"
+    },
+    {
+      "id": "C16",
+      "name": "团队合作 管理与真实用户沟通",
+      "description": "单人AI协作项目不证明真人团队领导、企业部署或用户研究；仅提供交接文档。",
+      "programs": [
+        "CMU_BIDA",
+        "BERKELEY",
+        "IMPERIAL",
+        "YALE",
+        "HARVARD",
+        "NTU_DS"
+      ],
+      "evidence": [
+        "docs/contribution_record.md"
+      ],
+      "status": "external_evidence_required"
+    },
+    {
+      "id": "C17",
+      "name": "正式学术先修与语言准备",
+      "description": "学位、数学统计课程学分成绩、编程课程及英语要求须逐校核验，代码和短课证书不能自动替代。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [],
+      "status": "external_evidence_required"
+    },
+    {
+      "id": "C18",
+      "name": "本人掌握与研究贡献",
+      "description": "能够亲自解释假设、复现实验、回答失败案例；工具生成成果不能自动认定本人掌握。",
+      "programs": [
+        "CUHK_DSBS",
+        "CMU_BIDA",
+        "HKU_FC",
+        "BERKELEY",
+        "PENN_SE",
+        "PENN_DSAI",
+        "NTU_DS",
+        "IMPERIAL",
+        "HARVARD",
+        "YALE"
+      ],
+      "evidence": [
+        "docs/contribution_record.md",
+        "docs/research_defense.md"
+      ],
+      "status": "external_evidence_required"
+    }
+  ],
+  "boundaries": [
+    "Formal prerequisites require academic documents.",
+    "Health interest and biomedical expertise require separate evidence.",
+    "Individual mastery and real teamwork cannot be inferred from generated artifacts.",
+    "Pending evidence is not a passed check; machine-verifiable status is finalized after execution."
+  ]
+}

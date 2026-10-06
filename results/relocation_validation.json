@@ -1,0 +1,736 @@
+{
+  "status": "passed",
+  "performed_at": "2026-10-06T00:16:57.581857+08:00",
+  "scope": "Archive extraction and portability with the existing task virtual environment; not a clean-environment installation or a new full test-suite run.",
+  "archive": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\outputs\\FinMath_Risk_Lab_项目与论文报告_v1.zip",
+  "archive_sha256": "6e6390fb607a64e864528cb057b5723398d7a2ffb6b7339bacbf9f9a5fbed829",
+  "destination": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\relocated_979dc58ac1be",
+  "python": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\venv\\Scripts\\python.exe",
+  "checks": [
+    {
+      "name": "zip_crc_and_safe_extraction",
+      "status": "passed",
+      "members": 93
+    },
+    {
+      "name": "all_manifest_files",
+      "status": "passed",
+      "verified": 92,
+      "unmanifested_files_excluding_manifest": 0
+    },
+    {
+      "name": "import_resolves_to_relocated_code",
+      "status": "passed",
+      "module_path": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\relocated_979dc58ac1be\\finmath_risk_lab\\risklab\\__init__.py"
+    },
+    {
+      "name": "relocated_artifact_audit",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "formal_simulation",
+          "status": "passed",
+          "details": {
+            "protocol_sha256": "a195049f755856a2ceb3e0af3a3d0f6d082bfdc57091116940c71ef4e770c307",
+            "conditions": 252,
+            "selections": 21,
+            "primary_contrasts": 1,
+            "ledger": {
+              "rows": 127,
+              "terminal_pnl": -0.31831186089717817,
+              "terminal_cost": 0.10812157342933773
+            }
+          }
+        },
+        {
+          "name": "historical_evidence",
+          "status": "passed",
+          "details": {
+            "forecast_rows": 10752,
+            "episode_strategy_cost_rows": 4536,
+            "ledger_groups": 42,
+            "ledger_rows": 924,
+            "data_and_implementation_hashes": "matched"
+          }
+        },
+        {
+          "name": "competency_union",
+          "status": "passed",
+          "details": {
+            "operation": "union",
+            "programs": 10,
+            "dimensions": 18,
+            "external_evidence_dimensions": 4
+          }
+        },
+        {
+          "name": "research_sqlite",
+          "status": "passed",
+          "details": {
+            "database_sha256": "587ba99f009add30db411623737e6d191d9ca8f85b104ab2d1f2eeb450342a70",
+            "tables": {
+              "simulation_metric": 252,
+              "forecast": 10752,
+              "episode": 4536
+            },
+            "test_risk_rows": 42,
+            "foreign_key_violations": 0,
+            "csv_row_equivalence": "passed"
+          }
+        }
+      ]
+    },
+    {
+      "name": "real_http_health",
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "service": "FinMath Risk Lab",
+        "version": "1.0.0",
+        "mode": "local-research",
+        "limits": {
+          "body_bytes": 16384,
+          "simulation_cells": 400000,
+          "concurrent_computations": 2
+        }
+      }
+    },
+    {
+      "name": "real_http_home",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 14982
+    },
+    {
+      "name": "real_http_static",
+      "status": 200,
+      "route": "/styles.css",
+      "bytes": 17719
+    },
+    {
+      "name": "real_http_static",
+      "status": 200,
+      "route": "/app.js",
+      "bytes": 26457
+    },
+    {
+      "name": "real_http_price",
+      "status": 200,
+      "bs": 10.450583572185565,
+      "implied_volatility": 0.2000000000002432,
+      "mc_independent_units": 5000,
+      "curve_points": 49
+    },
+    {
+      "name": "real_http_results",
+      "status": 200,
+      "artifact_statuses": {
+        "simulation": "available",
+        "historical": "available",
+        "validation": "available"
+      },
+      "simulation_conditions": 252,
+      "historical_currencies": [
+        "USD",
+        "JPY"
+      ]
+    },
+    {
+      "name": "real_http_competencies",
+      "status": 200,
+      "operation": "union",
+      "programs": 10,
+      "dimensions": 18
+    },
+    {
+      "name": "packaged_members_unchanged_after_checks",
+      "status": "passed",
+      "verified": 92
+    }
+  ],
+  "relocated_project_root": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\relocated_979dc58ac1be\\finmath_risk_lab",
+  "manifest_file_verification": [
+    {
+      "path": ".gitattributes",
+      "bytes": 168,
+      "sha256": "21ca7219c97ed27c9e92448c4d16e4bc1fe6eb25c459efd92b689251736adcc8",
+      "status": "matched"
+    },
+    {
+      "path": ".github/workflows/validation.yml",
+      "bytes": 450,
+      "sha256": "04fda345770cffc7cc212d7574c6ca62d2b75f6c17d1c9d0c0bbfd26286db709",
+      "status": "matched"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 82,
+      "sha256": "581b441323f55cdcfcfcce0a80f1b92a6885a446d12780d3d27044a82f2ca724",
+      "status": "matched"
+    },
+    {
+      "path": "BUILD_CONTRACT.md",
+      "bytes": 6931,
+      "sha256": "f804f056ad366602af5b314b2e9552ca1c60e8aafe2b502c82713d838497f23a",
+      "status": "matched"
+    },
+    {
+      "path": "data/data_quality.json",
+      "bytes": 731,
+      "sha256": "f9b0fc442a0f0b8fc8b57b5d55ec629b62d941e803950293602bb1a291cd8b1a",
+      "status": "matched"
+    },
+    {
+      "path": "data/ecb_reference_snapshot.zip",
+      "bytes": 640517,
+      "sha256": "b18da3b5f2026ca8315732e5612b0d9feff17be1e53b108235742a7ee54f171e",
+      "status": "matched"
+    },
+    {
+      "path": "data/ecb_usd_jpy.csv",
+      "bytes": 171030,
+      "sha256": "948e16824482b1f50a4de137375a3fd02cf3f93b60cbb84e35ee5d7cf9608261",
+      "status": "matched"
+    },
+    {
+      "path": "data/source_manifest.json",
+      "bytes": 2045,
+      "sha256": "6f9c0e6c65874c9e5d5ed85d20768d085966c5f4ae020f6d6ceeb1e11d2f5c4e",
+      "status": "matched"
+    },
+    {
+      "path": "docs/api.md",
+      "bytes": 6469,
+      "sha256": "3e47594bca5aabc49cd4e3e2de4bf657ae0cc8ba829bc10cf71783ecd5a537dc",
+      "status": "matched"
+    },
+    {
+      "path": "docs/competency_union.json",
+      "bytes": 14777,
+      "sha256": "ab3157342219e53dd02c84abe75cc967986080fdb461edff10d652dba91b89ff",
+      "status": "matched"
+    },
+    {
+      "path": "docs/contribution_record.md",
+      "bytes": 1494,
+      "sha256": "fda6b7cc18e1e8dbcee3b4d4bb48177efb95c09fee79dd2cd3b0e3a2eb0f890c",
+      "status": "matched"
+    },
+    {
+      "path": "docs/data_governance.md",
+      "bytes": 1606,
+      "sha256": "3a5ccda3bf0b36fc17a7b7c9c621a4de5f90ae0fc43d80ec9bf125c4f384ce30",
+      "status": "matched"
+    },
+    {
+      "path": "docs/evidence_index.md",
+      "bytes": 1828,
+      "sha256": "21dd04f9738a67e5eb5d6a20b4825cdbcfe74ce08053d7cb023929555a75e9a9",
+      "status": "matched"
+    },
+    {
+      "path": "docs/historical_method.md",
+      "bytes": 14835,
+      "sha256": "3ecf4af18468d139bc594c8508e4880488e77f88284f965606639cb14756fb23",
+      "status": "matched"
+    },
+    {
+      "path": "docs/references.json",
+      "bytes": 6375,
+      "sha256": "2790e612665849ecc50dec1aa3ed3ad88030ec065feec9ea2be55d27defb2db0",
+      "status": "matched"
+    },
+    {
+      "path": "docs/reproducibility.md",
+      "bytes": 3250,
+      "sha256": "fd2d5e17e6bd36ee5082f9cac2886f12dec86bd919522084beb0d23e4f9cd543",
+      "status": "matched"
+    },
+    {
+      "path": "docs/research_defense.md",
+      "bytes": 3857,
+      "sha256": "72e22e13092bb329ba9617eb63f124d927a97c0b1dd79c6079e7991ef1d0f904",
+      "status": "matched"
+    },
+    {
+      "path": "docs/simulation_protocol.json",
+      "bytes": 2743,
+      "sha256": "a380df0a6a57f23e755a57546ca8ac578800dfcaf4f38ed9a0da08db068f9490",
+      "status": "matched"
+    },
+    {
+      "path": "docs/simulation_protocol_smoke.json",
+      "bytes": 2741,
+      "sha256": "d69c5eef3c9e36584b7ee0c7e6855f194bff83ddbfbd99218dc3d481903bcda4",
+      "status": "matched"
+    },
+    {
+      "path": "figures/01_numerical.png",
+      "bytes": 123772,
+      "sha256": "1450e059369bf4c6b2a0da39b9c000719f1890510eb9541f42c8ce1611441df5",
+      "status": "matched"
+    },
+    {
+      "path": "figures/01_numerical.svg",
+      "bytes": 30291,
+      "sha256": "689914f983c5d6c2c045341eba51a7f8cf489e2d8c345656c3b923039fc2143a",
+      "status": "matched"
+    },
+    {
+      "path": "figures/02_scenario_risk.png",
+      "bytes": 223362,
+      "sha256": "97af4645f4bfb20016c21bae1adc099e495504331c52881c427d2dbceb9415c9",
+      "status": "matched"
+    },
+    {
+      "path": "figures/02_scenario_risk.svg",
+      "bytes": 61481,
+      "sha256": "3ed83eee75e8eb21668e4a990b8c74cd15fca1685e0409600c2c9923b8ece481",
+      "status": "matched"
+    },
+    {
+      "path": "figures/03_cost_risk.png",
+      "bytes": 103131,
+      "sha256": "a232975c0f02338972ff49dcc46065692439d430932562b7979ec59cce928a5e",
+      "status": "matched"
+    },
+    {
+      "path": "figures/03_cost_risk.svg",
+      "bytes": 36936,
+      "sha256": "122c4d8c8aa5c2d72a8a205874ff1f594f083fbbb749626536e0e67872e49dc5",
+      "status": "matched"
+    },
+    {
+      "path": "figures/04_paired_comparisons.png",
+      "bytes": 68642,
+      "sha256": "8e5fa0ae6dfb0b0b070df0f1b0723b5cd2d21ce4daa541fa9e437bcd8f0bca58",
+      "status": "matched"
+    },
+    {
+      "path": "figures/04_paired_comparisons.svg",
+      "bytes": 12680,
+      "sha256": "5a9819afd5ca5ae4f92a00dbd9bba4d4beffb44036b4f18198acac7c8f103f38",
+      "status": "matched"
+    },
+    {
+      "path": "figures/05_historical_volatility.png",
+      "bytes": 394877,
+      "sha256": "a3a8e7e938fd55bbabfa7efd0aaf3ebf69a4b3fb6bf17838ac2b7a92c79fe8d1",
+      "status": "matched"
+    },
+    {
+      "path": "figures/05_historical_volatility.svg",
+      "bytes": 192882,
+      "sha256": "a4ad87bfac3eee8c29d2dede5e0630633fa1c3faa993a5c12689f691762bb501",
+      "status": "matched"
+    },
+    {
+      "path": "figures/06_forecast_comparison.png",
+      "bytes": 60851,
+      "sha256": "044f1bf99319a93e7041ed48438f234a49fc4d48395dc643e1e825cfcb3fca5d",
+      "status": "matched"
+    },
+    {
+      "path": "figures/06_forecast_comparison.svg",
+      "bytes": 14013,
+      "sha256": "1e0bc5a1d41dec81061f064d6f9694c57903e2efa2c96eee92dfe7134dcc174b",
+      "status": "matched"
+    },
+    {
+      "path": "figures/07_historical_hedging.png",
+      "bytes": 80569,
+      "sha256": "6e4891304beb1199cf9bed459d91de8a80dd850057f0348e1b10a144e7b8729b",
+      "status": "matched"
+    },
+    {
+      "path": "figures/07_historical_hedging.svg",
+      "bytes": 24706,
+      "sha256": "a07824501b62526790dbb66e582c01948d1ad7a36a4f44422af73691f0cd38b6",
+      "status": "matched"
+    },
+    {
+      "path": "figures/08_block_sensitivity.png",
+      "bytes": 66631,
+      "sha256": "15061e63f482c17a161f77b778a529439c5eb35980494c4a96f6b33d927e22c5",
+      "status": "matched"
+    },
+    {
+      "path": "figures/08_block_sensitivity.svg",
+      "bytes": 16488,
+      "sha256": "a11ee364c29bdec9cefed41994820526a615221592e495cabaf0594e31323482",
+      "status": "matched"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 580,
+      "sha256": "f0d60d6b4aba43bcc837c1b257636dc1577d600e058cfc6e17eff7197841612b",
+      "status": "matched"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3949,
+      "sha256": "f3bac648cac0b90ac25a3df9cac19506b8022d5bb0eb58f8361a0d8da536706c",
+      "status": "matched"
+    },
+    {
+      "path": "report/金融数学风险研究_论文式报告.docx",
+      "bytes": 1109597,
+      "sha256": "db7c8980a6105bcbc9cb0cc9295eaa080fa97a25692b5f0ac7933862f6486523",
+      "status": "matched"
+    },
+    {
+      "path": "requirements-reproduced.txt",
+      "bytes": 154,
+      "sha256": "68c80098dbebe8974526275a2bbb6bb7f95180a9033549895304d5afdadc8477",
+      "status": "matched"
+    },
+    {
+      "path": "results/artifact-audit-output.txt",
+      "bytes": 1776,
+      "sha256": "dd72d04ef1459712a140d0812d2ebbea5a8a60aa339cb5304335bed5de794ace",
+      "status": "matched"
+    },
+    {
+      "path": "results/artifact_audit.json",
+      "bytes": 1774,
+      "sha256": "463df2f99cae4ceffc7463a37074dc514dbdcfb5e2589fe5fd9922d209c695af",
+      "status": "matched"
+    },
+    {
+      "path": "results/browser_validation.json",
+      "bytes": 7039,
+      "sha256": "cd14ce07824a1169419c26a5d7b21911232fb24989d01f614177f9f44f65cfc1",
+      "status": "matched"
+    },
+    {
+      "path": "results/code_counts.json",
+      "bytes": 5101,
+      "sha256": "00d644acb38e76dfbf40538e792a65da4d15a7540785d991a7dd7d9de3be3e41",
+      "status": "matched"
+    },
+    {
+      "path": "results/document_validation.json",
+      "bytes": 1075,
+      "sha256": "9a74a045995c0337c3842e7262f74b847817b2e12a6214ddeb84a90f202f98ab",
+      "status": "matched"
+    },
+    {
+      "path": "results/historical_episodes.csv",
+      "bytes": 845052,
+      "sha256": "827cef500552f1a80d1d26e4e10b65e03fabf7a8e9319503059f84c98c04c22e",
+      "status": "matched"
+    },
+    {
+      "path": "results/historical_forecasts.csv",
+      "bytes": 2387778,
+      "sha256": "2faf88e9bfd116cdd1a45e2ea68433aef6e6342691474bc6b0359a6a5dca0ded",
+      "status": "matched"
+    },
+    {
+      "path": "results/historical_ledger.csv",
+      "bytes": 261243,
+      "sha256": "38b726c44dd3419eab9d6e3fc307c0383c9a71d671412e8b6deb268025b966b6",
+      "status": "matched"
+    },
+    {
+      "path": "results/historical_summary.json",
+      "bytes": 136664,
+      "sha256": "c1a7e63010bb64b1346561bab8e2249afe428994a257c411df589cb1698a2cfd",
+      "status": "matched"
+    },
+    {
+      "path": "results/numerical_benchmarks.csv",
+      "bytes": 1459,
+      "sha256": "c131adf07dc632c8891e43a1c509158684eb355af9b7033cc0ffde8aa3fe0cf1",
+      "status": "matched"
+    },
+    {
+      "path": "results/parallel_benchmark.csv",
+      "bytes": 1243,
+      "sha256": "0501e0a5621628d825ae5ca0b3a72bfc579a7f32cc110c13d0586825a6b7e8d7",
+      "status": "matched"
+    },
+    {
+      "path": "results/parallel_benchmark.json",
+      "bytes": 6381,
+      "sha256": "0e31b62bc7ecb1b5a41de0dbe697e119e74e9ca1cf99c7a3073c6eebaba20fe0",
+      "status": "matched"
+    },
+    {
+      "path": "results/pytest-output.txt",
+      "bytes": 264,
+      "sha256": "c55019d817e5b42d6b8683d91c0de49f571550b6d041f8abeb5c6e8d1b9f089a",
+      "status": "matched"
+    },
+    {
+      "path": "results/pytest-results.xml",
+      "bytes": 18939,
+      "sha256": "e8d8c1910c5ea12c366f041276c4e1c2c81e335cb4ca2302b2554d1f223df3e1",
+      "status": "matched"
+    },
+    {
+      "path": "results/research.sqlite",
+      "bytes": 2568192,
+      "sha256": "587ba99f009add30db411623737e6d191d9ca8f85b104ab2d1f2eeb450342a70",
+      "status": "matched"
+    },
+    {
+      "path": "results/simulation_comparisons.csv",
+      "bytes": 3088,
+      "sha256": "f5c41f05237249c6334da862dc31d97c7b38b4c6f262bf866d4a4a43db6a62ea",
+      "status": "matched"
+    },
+    {
+      "path": "results/simulation_ledger.csv",
+      "bytes": 30968,
+      "sha256": "27d52949e1b5ee356da9e00e472b70c9d409bbe378d0475cf3cbe2812c53a2ba",
+      "status": "matched"
+    },
+    {
+      "path": "results/simulation_metrics.csv",
+      "bytes": 49283,
+      "sha256": "734835fd6f86c0ab0baeeb770625f888074fdf76c71360b2c65a9dd307268693",
+      "status": "matched"
+    },
+    {
+      "path": "results/simulation_selection.csv",
+      "bytes": 2448,
+      "sha256": "c1972fc4ca271c465811da0dbac98c55ec6a5e46350d86b04d74e1a2fd2525b0",
+      "status": "matched"
+    },
+    {
+      "path": "results/simulation_summary.json",
+      "bytes": 143480,
+      "sha256": "8f0dc1451dc5a1a6c2ec2e201486bec83cf79e2c633f4fddc9265fb6e1cfdd99",
+      "status": "matched"
+    },
+    {
+      "path": "results/validation.json",
+      "bytes": 3691,
+      "sha256": "90199fa268ae7fbc8a9a88e6381c07c5cd14c153344dca5cb542ca073a02a35d",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/__init__.py",
+      "bytes": 108,
+      "sha256": "e4d28feeff1a0c343ed03e682497d3293278dfe3b6fa666d720136a17d2eb0e2",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/hedging.py",
+      "bytes": 7659,
+      "sha256": "70e510e0fc24b35906fc0da2111492b611b22bf362fcf4daa539a811578a03f6",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/historical.py",
+      "bytes": 17625,
+      "sha256": "d72c7a874ad183d10b7e80042ba03baf3a6989fc279255c55cfed11babfb8c2f",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/paths.py",
+      "bytes": 4189,
+      "sha256": "3a54b851d05f663b0f164b086c5fbbfe86838fa20fb6fae2b33047568b76f832",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/pricing.py",
+      "bytes": 11399,
+      "sha256": "359964a2ebbf6995d0a5e8a0625e95f68bb71e1e7767843e2b2471d250f52c7e",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/server.py",
+      "bytes": 14064,
+      "sha256": "e557b176bc20eed571f8d19271f4ce584e13976db972e2c4d12704b3e0ca39f8",
+      "status": "matched"
+    },
+    {
+      "path": "risklab/statistics.py",
+      "bytes": 3304,
+      "sha256": "47179b8741c8dcaa77ca0171b9af578ab0dedc15235b002063d534c66f04cbf8",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/benchmark_parallel.py",
+      "bytes": 8393,
+      "sha256": "31e1a7e4d58e95e2e1fc6ace4fa698ffde87842044d8ae0c7e1babb2930a7f22",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/build_evidence_catalog.py",
+      "bytes": 12051,
+      "sha256": "95c111ad1c65b2699692d17635b6fd6287c420088fbe236189c40ae0818b9f30",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/build_figures.py",
+      "bytes": 7001,
+      "sha256": "5920b494ae381fcf1d3982a066ce44ba7098542b7b4c20b624204edb61e57015",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 42721,
+      "sha256": "76a95eaecf0de13d8d6717fcdc2dc1e2256a0cf7b756e35dcbe8c9b66910b35c",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/build_research_store.py",
+      "bytes": 3740,
+      "sha256": "f8207d8caa8d0fc422b38a73be7542a4cf8e743dd4de017d6e0125c87f3a204c",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/fetch_ecb.py",
+      "bytes": 6446,
+      "sha256": "04ef596c8b8cffc809e7189d57b48de24919f146cad1bd560c9d55cb7e434f7e",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/package_release.py",
+      "bytes": 3245,
+      "sha256": "4390ddcc820194997019dc3b5919f8cc1cabec9f8a092ec062f2459b048ee522",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/query_research_store.py",
+      "bytes": 972,
+      "sha256": "42f7704f66faabf65ff45c58650834a3b505512652f9fd52373562c0e858f72d",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "bytes": 990,
+      "sha256": "944c2b17886fd5dda35bb70809c25bd0a6613799039c01d43301760971a2916e",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/run_historical.py",
+      "bytes": 14927,
+      "sha256": "735ea0411d355377b47bd95e8087a482b9296b8dd899e6993e537285d44519c5",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/run_simulations.py",
+      "bytes": 10251,
+      "sha256": "ab48f9624aa97db52227c70fea5ccf9336acca75ee0415ab26fb605557e26f1d",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/run_validation.py",
+      "bytes": 2914,
+      "sha256": "df74940d38f1cfcb9a16e4e165f4e4df417ccbf188aee136a75007c6865721be",
+      "status": "matched"
+    },
+    {
+      "path": "scripts/verify_artifacts.py",
+      "bytes": 20874,
+      "sha256": "23a0611ab3e9af4838641a842e773ce3d751b1163d50bb03bc8ae561303d7f06",
+      "status": "matched"
+    },
+    {
+      "path": "tests/browser_qa.cjs",
+      "bytes": 10715,
+      "sha256": "1fbcf6d237592b5a2837562bf3e790935b593aed56b89ee4162b4cc53aed92eb",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_artifact_audit.py",
+      "bytes": 3760,
+      "sha256": "e8251f4e4c9923f789bf9d9e1f0edb807999a3a7c3869833daa9277fdc3bd1d3",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_hedging.py",
+      "bytes": 6093,
+      "sha256": "d8af719711af2a92d89efb55f27fcfdc64627b0a0ef6d634adf924f9032b0ef0",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_historical.py",
+      "bytes": 10291,
+      "sha256": "f22b07ce8e31267df04ff30e70f3e311cd8e769d29daef8ab3af5ffca47879a8",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_parallel_benchmark.py",
+      "bytes": 1660,
+      "sha256": "01e24e0c535fa295997103fd6e31af46c0cbf4c1d96cbe2e79faf060ba9c58dc",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_paths.py",
+      "bytes": 2193,
+      "sha256": "d9c91906f2670081d9f166f3d2d5e1232c5ca2d4617254508dd52ffdb8fce1f0",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_pricing.py",
+      "bytes": 7459,
+      "sha256": "cf5a27e03582e60afefd003c9076488b6d711192f630d1038fb42830fb6bb8cf",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_server.py",
+      "bytes": 6148,
+      "sha256": "d83cb5ea5d38284c835d93f5624ba202b3b820c442c4118f40c0780a585ab1b3",
+      "status": "matched"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "bytes": 2188,
+      "sha256": "20df2a436171ad51db27ea58f0082dc7869eb0cb280f8f668b718ec6a0fce8d9",
+      "status": "matched"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 26457,
+      "sha256": "4d6e24465ef5a04843a3f95ba789c86dc2018177e587c266644a571ff2077456",
+      "status": "matched"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 14982,
+      "sha256": "a0f0a2a9338b857d40d290ed44239a9acdf2a0b6ecda02ede25c4dd709eb0ae5",
+      "status": "matched"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 17719,
+      "sha256": "f41a3f3274745e8ed65b7764191b60bfcf41d9de14ca60d52293e54fb1806832",
+      "status": "matched"
+    }
+  ],
+  "artifact_audit_process": {
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "{\n  \"schema_version\": \"1.0\",\n  \"status\": \"passed\",\n  \"checks\": [\n    {\n      \"name\": \"formal_simulation\",\n      \"status\": \"passed\",\n      \"details\": {\n        \"protocol_sha256\": \"a195049f755856a2ceb3e0af3a3d0f6d082bfdc57091116940c71ef4e770c307\",\n        \"conditions\": 252,\n        \"selections\": 21,\n        \"primary_contrasts\": 1,\n        \"ledger\": {\n          \"rows\": 127,\n          \"terminal_pnl\": -0.31831186089717817,\n          \"terminal_cost\": 0.10812157342933773\n        }\n      }\n    },\n    {\n      \"name\": \"historical_evidence\",\n      \"status\": \"passed\",\n      \"details\": {\n        \"forecast_rows\": 10752,\n        \"episode_strategy_cost_rows\": 4536,\n        \"ledger_groups\": 42,\n        \"ledger_rows\": 924,\n        \"data_and_implementation_hashes\": \"matched\"\n      }\n    },\n    {\n      \"name\": \"competency_union\",\n      \"status\": \"passed\",\n      \"details\": {\n        \"operation\": \"union\",\n        \"programs\": 10,\n        \"dimensions\": 18,\n        \"external_evidence_dimensions\": 4\n      }\n    },\n    {\n      \"name\": \"research_sqlite\",\n      \"status\": \"passed\",\n      \"details\": {\n        \"database_sha256\": \"587ba99f009add30db411623737e6d191d9ca8f85b104ab2d1f2eeb450342a70\",\n        \"tables\": {\n          \"simulation_metric\": 252,\n          \"forecast\": 10752,\n          \"episode\": 4536\n        },\n        \"test_risk_rows\": 42,\n        \"foreign_key_violations\": 0,\n        \"csv_row_equivalence\": \"passed\"\n      }\n    }\n  ],\n  \"scope\": \"Cross-artifact consistency, ledger accounting, source provenance and SQL equivalence. Does not certify model validity, executable returns, admissions eligibility or personal mastery.\",\n  \"auditor_sha256\": \"23a0611ab3e9af4838641a842e773ce3d751b1163d50bb03bc8ae561303d7f06\"\n}\n"
+  },
+  "server": {
+    "port": 8871,
+    "pid": 64368,
+    "command": [
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\venv\\Scripts\\python.exe",
+      "-m",
+      "risklab.server",
+      "--port",
+      "8871"
+    ],
+    "cwd": "C:\\Users\\ROG\\Documents\\Codex\\2026-10-03\\xian-z\\work\\finmath_risk_lab\\relocated_979dc58ac1be\\finmath_risk_lab",
+    "own_process_stopped": true,
+    "exit_code": 1,
+    "port_listening_after_cleanup": false
+  },
+  "archive_unchanged": true,
+  "completed_at": "2026-10-06T00:16:59.824208+08:00",
+  "final_release_note": {
+    "unchanged_tested_members": 91,
+    "omitted_internal_build_file": [
+      "BUILD_CONTRACT.md"
+    ],
+    "added_evidence": "results/relocation_validation.json",
+    "interpretation": "Functional relocation checks used the candidate archive identified above. Final release retains byte-identical runtime, data, results and report; only this evidence record is added and an internal build contract is omitted. The final ZIP is independently CRC and MANIFEST checked by package_release.py."
+  }
+}

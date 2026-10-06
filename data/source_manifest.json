@@ -1,0 +1,31 @@
+{
+  "publisher": "European Central Bank (ECB)",
+  "dataset": "Euro foreign exchange reference rates",
+  "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+  "download_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+  "license_url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+  "retrieved_at_hong_kong": "2026-10-05T23:40:26+08:00",
+  "fixed_analysis_endpoint": "2025-12-31",
+  "units": "USD and JPY per one EUR. These are reference observations, not executable market quotes.",
+  "reuse_summary": "ECB permits free use of information obtained directly from its website subject to accurate reproduction, ECB attribution and explicit identification of modifications. Sales require notice of free availability. Named-author publications have a separate permission exception. No ECB endorsement is implied.",
+  "processing_notice": "Select USD and JPY currency units per EUR; sort dates; retain 1999-01-04 through 2025-12-31 inclusive. No quote correction, return winsorisation, filling or observation deletion. Downstream analyses derive log returns, variance proxies and hypothetical normalized paths; these are our transformations, not ECB outputs.",
+  "limitations": [
+    "Reference rates are published for information; ECB discourages transaction use.",
+    "Snapshot may contain revisions known at retrieval rather than point-in-time vintages.",
+    "Currency series share EUR as denominator and are not independent replications."
+  ],
+  "files": {
+    "ecb_reference_snapshot.zip": {
+      "sha256": "b18da3b5f2026ca8315732e5612b0d9feff17be1e53b108235742a7ee54f171e",
+      "bytes": 640517
+    },
+    "ecb_usd_jpy.csv": {
+      "sha256": "948e16824482b1f50a4de137375a3fd02cf3f93b60cbb84e35ee5d7cf9608261",
+      "bytes": 171030
+    },
+    "data_quality.json": {
+      "sha256": "f9b0fc442a0f0b8fc8b57b5d55ec629b62d941e803950293602bb1a291cd8b1a",
+      "bytes": 731
+    }
+  }
+}

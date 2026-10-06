@@ -1,0 +1,241 @@
+{
+  "status": "passed",
+  "engine": "Microsoft Edge via Playwright",
+  "viewport_desktop": [
+    1440,
+    1100
+  ],
+  "viewport_mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    {
+      "name": "Initial overview renders actual computed price curve",
+      "status": "passed"
+    },
+    {
+      "name": "All six navigation sections exist",
+      "status": "passed"
+    },
+    {
+      "name": "Service connection is reported",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard Enter opens pricing section",
+      "status": "passed"
+    },
+    {
+      "name": "Edited input marks old output stale",
+      "status": "passed"
+    },
+    {
+      "name": "Spot update reaches real pricing API",
+      "status": "passed"
+    },
+    {
+      "name": "Put calculation changes actual price and delta",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid spot blocked by accessible HTML validity",
+      "status": "passed"
+    },
+    {
+      "name": "Default simulation renders both strategy comparison and ledger",
+      "status": "passed"
+    },
+    {
+      "name": "Histogram accounts for all simulated paths",
+      "status": "passed"
+    },
+    {
+      "name": "Changing seed changes generated paths",
+      "status": "passed"
+    },
+    {
+      "name": "Changing fee preserves paths and changes net performance",
+      "status": "passed"
+    },
+    {
+      "name": "Threshold controls replace fixed interval controls",
+      "status": "passed"
+    },
+    {
+      "name": "Threshold policy is computed",
+      "status": "passed"
+    },
+    {
+      "name": "Regime parameter reaches generated model",
+      "status": "passed"
+    },
+    {
+      "name": "Jump diffusion scenario computes",
+      "status": "passed"
+    },
+    {
+      "name": "Oversized simulation shows explicit client error",
+      "status": "passed"
+    },
+    {
+      "name": "Server independently rejects oversized simulation",
+      "status": "passed"
+    },
+    {
+      "name": "Actual experiment JSON can be downloaded",
+      "status": "passed"
+    },
+    {
+      "name": "Executed historical evidence is rendered",
+      "status": "passed"
+    },
+    {
+      "name": "Currency switch updates evidence",
+      "status": "passed"
+    },
+    {
+      "name": "Capability union contains 18 dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "All 10 programs have official links",
+      "status": "passed"
+    },
+    {
+      "name": "External evidence boundaries remain visible",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard opens V2 research and publication section",
+      "status": "passed"
+    },
+    {
+      "name": "V2 protocol displays actual six-currency scope",
+      "status": "passed"
+    },
+    {
+      "name": "V2 states retain all three independently loaded result artifacts",
+      "status": "passed"
+    },
+    {
+      "name": "All three executed V2 artifacts are available within the API size bound",
+      "status": "passed"
+    },
+    {
+      "name": "V2 simulation primary interval uses the executed values",
+      "status": "passed"
+    },
+    {
+      "name": "V2 historical primary table includes all six currencies and both periods",
+      "status": "passed"
+    },
+    {
+      "name": "V2 distribution and fee selectors change actual risk-cost evidence",
+      "status": "passed"
+    },
+    {
+      "name": "V2 history selector includes all six actual currencies",
+      "status": "passed"
+    },
+    {
+      "name": "V2 historical currency changes the real annual chart",
+      "status": "passed"
+    },
+    {
+      "name": "V2 additional period displays its actual small episode count",
+      "status": "passed"
+    },
+    {
+      "name": "V2 convex cost selector exposes the actual cost tradeoff",
+      "status": "passed"
+    },
+    {
+      "name": "V2 optimization audit preserves small nonzero residuals",
+      "status": "passed"
+    },
+    {
+      "name": "V2 convex distribution selector retains actual comparisons",
+      "status": "passed"
+    },
+    {
+      "name": "Every visible V2 input and selector has a label",
+      "status": "passed"
+    },
+    {
+      "name": "V2 publication routes contain all verified official venues",
+      "status": "passed"
+    },
+    {
+      "name": "Open-route filter selects actual available submission paths",
+      "status": "passed"
+    },
+    {
+      "name": "Closed and unmet-condition routes remain available separately",
+      "status": "passed"
+    },
+    {
+      "name": "Publication status explicitly distinguishes non-proceedings routes",
+      "status": "passed"
+    },
+    {
+      "name": "V2 actual evidence can be exported",
+      "status": "passed"
+    },
+    {
+      "name": "V2 missing and invalid files produce explicit nonnumeric states",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile overview has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile pricing has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile hedging has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile historical has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile competencies has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile research-v2 has no horizontal page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile form completes live calculation",
+      "status": "passed"
+    },
+    {
+      "name": "Loading disables submit to prevent duplicate work",
+      "status": "passed"
+    },
+    {
+      "name": "Server errors are visible without fabricated replacement",
+      "status": "passed"
+    },
+    {
+      "name": "Every visible control has an accessible label",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught browser JavaScript errors",
+      "status": "passed"
+    }
+  ],
+  "check_count": 55,
+  "browser_errors": [],
+  "console_messages": [
+    "Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)"
+  ],
+  "expected_error_probe": "The script intentionally intercepts one price request with HTTP 422 to verify visible failure and preserved prior output. This HTTP console error is expected; successful calculation paths had no console errors.",
+  "note": "Checks assert numerical behavior and browser interaction; screenshots require separate visual review. Not a WCAG certification or user study."
+}

@@ -1,0 +1,219 @@
+{
+  "protocol": {
+    "total_paths": 2000000,
+    "independent_pair_units": 1000000,
+    "blocks": 8,
+    "seed": 741927,
+    "tasks": [
+      {
+        "n_paths": 250000,
+        "seed": 2201017921371938409
+      },
+      {
+        "n_paths": 250000,
+        "seed": 16575560904658631313
+      },
+      {
+        "n_paths": 250000,
+        "seed": 17896171188879977354
+      },
+      {
+        "n_paths": 250000,
+        "seed": 2751131502196203477
+      },
+      {
+        "n_paths": 250000,
+        "seed": 11805220177697086105
+      },
+      {
+        "n_paths": 250000,
+        "seed": 14553440208379828082
+      },
+      {
+        "n_paths": 250000,
+        "seed": 1398758410885211646
+      },
+      {
+        "n_paths": 250000,
+        "seed": 10186013202689309417
+      }
+    ],
+    "repetitions": 3,
+    "workers": [
+      1,
+      2,
+      4
+    ],
+    "parameters": {
+      "spot": 100,
+      "strike": 100,
+      "maturity": 1,
+      "rate": 0.05,
+      "vol": 0.2
+    },
+    "includes": "wall time includes task execution, startup, result collection, pool shutdown and statistic combination",
+    "independence": "SeedSequence child streams; each antithetic pair average is one independent observation",
+    "repeat_interpretation": "Repeated timings use identical random blocks; they are not independent pricing replications"
+  },
+  "protocol_sha256": "a129d26835dce71d7801f6b3893947ba3eb3bce06b14e688611514b70a5171cb",
+  "estimator": {
+    "price": 10.45147979769478,
+    "standard_error": 0.007353530675755923,
+    "ci_low": 10.43706712496648,
+    "ci_high": 10.46589247042308,
+    "n_paths": 2000000,
+    "independent_units": 1000000
+  },
+  "analytic_price": 10.450583572185565,
+  "serial_parallel_statistics_exactly_equal": true,
+  "timings": [
+    {
+      "repetition": 1,
+      "workers": 1,
+      "mode": "serial",
+      "elapsed_seconds": 0.025422500000786385,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 1,
+      "workers": 2,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.6788343999996869,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 1,
+      "workers": 4,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.7155500999997457,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 2,
+      "workers": 2,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.6570231999994576,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 2,
+      "workers": 4,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.7014416999991226,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 2,
+      "workers": 1,
+      "mode": "serial",
+      "elapsed_seconds": 0.026429900000948692,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 3,
+      "workers": 4,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.7026175999999396,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 3,
+      "workers": 1,
+      "mode": "serial",
+      "elapsed_seconds": 0.024885799999537994,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    },
+    {
+      "repetition": 3,
+      "workers": 2,
+      "mode": "process_pool",
+      "elapsed_seconds": 0.6495734000000084,
+      "price": 10.45147979769478,
+      "standard_error": 0.007353530675755923,
+      "ci_low": 10.43706712496648,
+      "ci_high": 10.46589247042308,
+      "n_paths": 2000000,
+      "independent_units": 1000000
+    }
+  ],
+  "summary": [
+    {
+      "workers": 1,
+      "repetitions": 3,
+      "median_seconds": 0.025422500000786385,
+      "min_seconds": 0.024885799999537994,
+      "max_seconds": 0.026429900000948692,
+      "speedup_vs_serial_median": 1.0
+    },
+    {
+      "workers": 2,
+      "repetitions": 3,
+      "median_seconds": 0.6570231999994576,
+      "min_seconds": 0.6495734000000084,
+      "max_seconds": 0.6788343999996869,
+      "speedup_vs_serial_median": 0.038693458618824075
+    },
+    {
+      "workers": 4,
+      "repetitions": 3,
+      "median_seconds": 0.7026175999999396,
+      "min_seconds": 0.7014416999991226,
+      "max_seconds": 0.7155500999997457,
+      "speedup_vs_serial_median": 0.036182555063790846
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 24,
+    "numpy": "2.3.5",
+    "start_method": "spawn"
+  },
+  "limitations": [
+    "One local machine, three repetitions by default, no cluster or HPC scalability claim.",
+    "Vectorized NumPy already does efficient per-block work; startup may dominate.",
+    "Concurrent machine activity and timing variance remain uncontrolled.",
+    "The number of workers is not the number of independent observations.",
+    "Repeated timings do not multiply the independent pricing sample size."
+  ]
+}

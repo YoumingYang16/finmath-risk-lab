@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "formal_simulation",
+      "status": "passed",
+      "details": {
+        "protocol_sha256": "a195049f755856a2ceb3e0af3a3d0f6d082bfdc57091116940c71ef4e770c307",
+        "conditions": 252,
+        "selections": 21,
+        "primary_contrasts": 1,
+        "ledger": {
+          "rows": 127,
+          "terminal_pnl": -0.31831186089717817,
+          "terminal_cost": 0.10812157342933773
+        }
+      }
+    },
+    {
+      "name": "historical_evidence",
+      "status": "passed",
+      "details": {
+        "forecast_rows": 10752,
+        "episode_strategy_cost_rows": 4536,
+        "ledger_groups": 42,
+        "ledger_rows": 924,
+        "data_and_implementation_hashes": "matched"
+      }
+    },
+    {
+      "name": "competency_union",
+      "status": "passed",
+      "details": {
+        "operation": "union",
+        "programs": 10,
+        "dimensions": 18,
+        "external_evidence_dimensions": 4
+      }
+    },
+    {
+      "name": "research_sqlite",
+      "status": "passed",
+      "details": {
+        "database_sha256": "587ba99f009add30db411623737e6d191d9ca8f85b104ab2d1f2eeb450342a70",
+        "tables": {
+          "simulation_metric": 252,
+          "forecast": 10752,
+          "episode": 4536
+        },
+        "test_risk_rows": 42,
+        "foreign_key_violations": 0,
+        "csv_row_equivalence": "passed"
+      }
+    }
+  ],
+  "scope": "Cross-artifact consistency, ledger accounting, source provenance and SQL equivalence. Does not certify model validity, executable returns, admissions eligibility or personal mastery.",
+  "auditor_sha256": "23a0611ab3e9af4838641a842e773ce3d751b1163d50bb03bc8ae561303d7f06"
+}
